@@ -64,7 +64,7 @@ function RequestInvite() {
                     width="2984"
                     height="936"
                     alt=""
-                    srcset="
+                    srcSet="
                         images/k4m2a-cloud-500.webp   500w,
                         images/k4m2a-cloud-800.webp   800w,
                         images/k4m2a-cloud-1080.webp 1080w,
@@ -84,7 +84,7 @@ function RequestInvite() {
                     width="2984"
                     height="936"
                     alt=""
-                    srcset="
+                    srcSet="
                         images/k4m2a-cloud-500.webp   500w,
                         images/k4m2a-cloud-800.webp   800w,
                         images/k4m2a-cloud-1080.webp 1080w,

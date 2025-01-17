@@ -29,7 +29,7 @@ export default function EmailForm({
           required
         />
         <div className="input-bg u-rainbow u-blur-perf"></div>
-        <button type="submit" className="form-submit">
+        <button type="submit" className="form-submit w-button">
           {buttonText}
         </button>
       </form>

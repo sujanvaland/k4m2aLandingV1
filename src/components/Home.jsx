@@ -335,7 +335,7 @@ export default function Home() {
                   width="288.5"
                   height="588.5"
                   alt=""
-                  srcset="
+                  srcSet="
                                         images/k4m2a-app-3.webp,
                                         images/k4m2a-app-3.webp
                                         "

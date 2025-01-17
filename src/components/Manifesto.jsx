@@ -106,7 +106,7 @@ function Manifesto() {
                 width="2984"
                 height="936"
                 alt=""
-                srcset="
+                srcSet="
                             images/k4m2a-cloud-500.webp   500w,
                             images/k4m2a-cloud-800.webp   800w,
                             images/k4m2a-cloud-1080.webp 1080w,
@@ -126,7 +126,7 @@ function Manifesto() {
                 width="2984"
                 height="936"
                 alt=""
-                srcset="
+                srcSet="
                             images/k4m2a-cloud-500.webp   500w,
                             images/k4m2a-cloud-800.webp   800w,
                             images/k4m2a-cloud-1080.webp 1080w,
@@ -195,7 +195,7 @@ function Manifesto() {
                   width="333"
                   height="459"
                   alt=""
-                  srcset="
+                  srcSet="
                             images/k4m2a-portal-500.webp 500w,
                             images/k4m2a-portal.webp       666w
                             "
@@ -269,7 +269,7 @@ function Manifesto() {
                     <div className="input-wrap">
                       <input
                         className="input w-input"
-                        maxlength="256"
+                        maxLength="256"
                         name="Email"
                         data-name="Email"
                         placeholder="Enter your e-mail"
@@ -305,7 +305,7 @@ function Manifesto() {
                   width="316.5"
                   height="645.5"
                   alt=""
-                  srcset="
+                  srcSet="
                             images/k4m2a-search.webp 500w,
                             images/k4m2a-search.webp       633w
                             "
@@ -320,7 +320,7 @@ function Manifesto() {
                   width="316.5"
                   height="645.5"
                   alt=""
-                  srcset="
+                  srcSet="
                             images/post-detail.webp 500w,
                             images/post-detail.webp      634w
                             "
@@ -336,7 +336,7 @@ function Manifesto() {
                 width="2984"
                 height="936"
                 alt=""
-                srcset="
+                srcSet="
                             images/k4m2a-cloud-500.webp   500w,
                             images/k4m2a-cloud-800.webp   800w,
                             images/k4m2a-cloud-1080.webp 1080w,
@@ -356,7 +356,7 @@ function Manifesto() {
                 width="2984"
                 height="936"
                 alt=""
-                srcset="
+                srcSet="
                             images/k4m2a-cloud-500.webp   500w,
                             images/k4m2a-cloud-800.webp   800w,
                             images/k4m2a-cloud-1080.webp 1080w,
@@ -377,7 +377,7 @@ function Manifesto() {
                   width="270"
                   sizes="(max-width: 479px) 34vw, (max-width: 767px) 28vw, (max-width: 991px) 27vw, 266px"
                   alt=""
-                  srcset="
+                  srcSet="
                                 images/k4m2a_cloud-500.webp 500w,
                                 images/k4m2a_cloud.webp       540w
                             "
@@ -391,7 +391,7 @@ function Manifesto() {
                   width="270"
                   sizes="(max-width: 479px) 34vw, (max-width: 767px) 28vw, (max-width: 991px) 27vw, 266px"
                   alt=""
-                  srcset="
+                  srcSet="
                                 images/k4m2a_cloud-500.webp 500w,
                                 images/k4m2a_cloud.webp       540w
                             "

@@ -19,7 +19,7 @@ function Research() {
                             src="images/img_researchbanner.png"
                             loading="eager"
                             sizes="(max-width: 767px) 100vw, (max-width: 991px) 93vw, 72vw"
-                            srcset="
+                            srcSet="
                                 images/img_researchbanner.png   500w,
                                 images/img_researchbanner.png   800w,
                                 images/img_researchbanner.png 1080w,
@@ -155,7 +155,7 @@ function Research() {
                                 data-wf-element-id="caf2c832-23c6-51a2-fec2-4b82481ca0ab"
                             >
                                 <div className="input-wrap">
-                                    <input className="input cc-cta-banner w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your e-mail" type="email" id="email" required="" />
+                                    <input className="input cc-cta-banner w-input" maxLength="256" name="Email" data-name="Email" placeholder="Enter your e-mail" type="email" id="email" required="" />
                                     <div className="input-bg u-rainbow u-blur-perf"></div>
                                     <input type="submit" data-wait="Sign up" className="form-submit w-button" value="Request" />
                                 </div>
@@ -172,7 +172,7 @@ function Research() {
                             width="316.5"
                             height="645.5"
                             alt=""
-                            srcset="
+                            srcSet="
                             images/k4m2a-app-3.webp 500w,
                             images/k4m2a-app-3.webp       633w
                             "
