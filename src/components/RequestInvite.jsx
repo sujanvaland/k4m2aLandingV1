@@ -197,6 +197,7 @@ function RequestInvite() {
                     }`}
                     defaultCountry="US"
                     value={formData.phone}
+                    limitMaxLength={20}
                     onChange={handlePhoneChange}
                   />
                   <div>
