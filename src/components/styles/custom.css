@@ -2646,15 +2646,32 @@ p {
     margin-bottom: 10px; position: relative;
 }
 .formmainbox ul li.phonebox{
-display: flex; flex-direction: row; justify-content: flex-start; align-items: center;
+display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;
 
 }
 .formmainbox ul li .input{padding-right: 0px; min-width: inherit; width: 100%; font-size: 14px;}
-.formmainbox ul li.phonebox .input{padding-left: 111px;}
+.formmainbox ul li.phonebox .input{padding-left: 25px;}
 .formmainbox ul li.phonebox .codebox{
     position: absolute; left: 20px; z-index: 2; border-right: 1px solid #cccccc;
 }
+.formmainbox ul li.phonebox .PhoneInput{
+    background: #ffffff;
+    z-index: 1;
+    color: var(--black);
+    border: 1px solid #f0efef;
+    border-radius: 30px;
+     width: 100%;
+    min-height: 62px; 
+    margin-bottom: 0;
+    padding: 14px 14px 14px 28px;
+    font-size: 16px;
+    position: relative; resize: none;
+}
 
+.formmainbox ul li.phonebox .PhoneInput input{
+    width: 80%; max-width: 90%;
+    border:0px;
+}
 .areabox {
     z-index: 1;
     color: var(--black);
@@ -3599,6 +3616,14 @@ display: flex; flex-direction: row; justify-content: flex-start; align-items: ce
     inset: 10px 10px 10px auto; margin-left: 20px;
 
 }
+.btnsubmit:hover{    z-index: 2;
+    background-color:#000000;
+    border-radius: 100px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: background-color .15s;
+    position: relative;
+    inset: 10px 10px 10px auto; margin-left: 20px;}
 
 .cloud-item {
     width: 28%;
@@ -3873,6 +3898,26 @@ display: flex; flex-direction: row; justify-content: flex-start; align-items: ce
     width: 100%; text-align: center; color:#888787; font-size: 13px; font-weight: 300;
     max-width: 230px;
 }
+
+ 
+.thankyouheading{
+    letter-spacing: -.03em;
+    margin-bottom: 32px;
+    font-family: "Noto Serif", serif;
+    font-size: 84px;
+    font-weight: 400;
+    line-height: 1;
+    white-space: nowrap;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 700px;
+    overflow: hidden; min-height: 120px;
+}
+
+.react-tooltip{
+    position: relative; z-index: 4;
+}
+
 @media screen and (max-width:991px) {
     .desktop{
         display: none;
@@ -3888,7 +3933,9 @@ display: flex; flex-direction: row; justify-content: flex-start; align-items: ce
     }
     .home-hero-heading {
         margin-bottom: 32px;
-        font-size: 72px
+        font-size: 72px;
+        max-width: 95%;
+        min-height: 50px;
     }
     .subheading.cc-features {
         font-size: 16px; width: 150px;

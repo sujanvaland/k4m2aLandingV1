@@ -1,9 +1,11 @@
 import React from "react";
 import { useLocation , Link} from "react-router-dom";
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 function ThankYou() {
   const location = useLocation();
-  const UserFullName = location.state?.name || "";
+  const UserFullName = location.state?.name || "ajay bhafslkdjfklsajfklsajflkjl";
   return (
     <main className="main cc-home">
       <div
@@ -21,7 +23,9 @@ function ThankYou() {
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
               </div>
-              <h1 className="home-hero-heading">{UserFullName}</h1>
+              <h1 className="home-hero-heading thankyouheading" id="tooltip-target" data-tip="fsdfsd">{UserFullName}</h1>
+              {/* <button >{UserFullName}</button> */}
+      <Tooltip anchorId="tooltip-target" content={UserFullName} />             
               <p className="subheading maxw530 marbtm20">
                 Did you know that 85% of people believe they have the power to
                 make the world a better place, yet only 5% consistently take
