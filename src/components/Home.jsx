@@ -1,5 +1,7 @@
 import EmailForm from "../components/ui/EmailForm";
 import EyebrowPill from "../components/ui/EyebrowPill";
+import "./styles/custom.css"
+import "./styles/styles.css"
 
 export default function Home() {
   return (

@@ -1,24 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import mobileMenuDivider from "/images/mobile-menu-divider.png";
-import logoMainWh from "/images/logo-main-wh.svg";
-import "./styles/custom.css";
-import "./styles/styles.css";
-import imgManifesto from "/images/img_manifeasto.png";
-import k4m2aCloud from "/images/k4m2a-cloud.webp";
-import k4m2aCloud500 from "/images/k4m2a-cloud-500.webp";
-import k4m2aCloud800 from "/images/k4m2a-cloud-800.webp";
-import k4m2aCloud1080 from "/images/k4m2a-cloud-1080.webp";
-import k4m2aCloud1600 from "/images/k4m2a-cloud-1600.webp";
-import k4m2aCloud2000 from "/images/k4m2a-cloud-2000.webp";
-import k4m2aCloud2600 from "/images/k4m2a-cloud-2600.webp";
-import k4m2aPortal from "/images/k4m2a-portal.webp";
-import k4m2aPortal500 from "/images/k4m2a-portal-500.webp";
-import logo from "/images/logo.png";
-import k4Img1 from "/images/k4_img1.png";
-import k4Img2 from "/images/k4_img2.png";
-import Navigation from "./Navigation";
-import Footer from "./Footer";
+import "./styles/custom.css"
+import "./styles/styles.css"
 
 function Manifesto() {
   useEffect(() => {

@@ -4834,4 +4834,25 @@ display: flex; flex-direction: row; justify-content: flex-start; align-items: ce
     } 
 }
  
- 
+
+
+.input-error {
+    border: 1px solid red;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }

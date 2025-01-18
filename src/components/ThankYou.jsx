@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocation , Link} from "react-router-dom";
 
 function ThankYou() {
+  const location = useLocation();
+  const UserFullName = location.state?.name || "";
   return (
     <main className="main cc-home">
       <div
@@ -18,7 +21,7 @@ function ThankYou() {
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
               </div>
-              <h1 className="home-hero-heading">Tina Parker </h1>
+              <h1 className="home-hero-heading">{UserFullName}</h1>
               <p className="subheading maxw530 marbtm20">
                 Did you know that 85% of people believe they have the power to
                 make the world a better place, yet only 5% consistently take
@@ -32,9 +35,9 @@ function ThankYou() {
                 and email to learn more about you. Keep an eye out, and let’s
                 take the next step together!
               </p>
-              <a href="index.html" className="linkreturnhomepage">
+              <Link to="/" className="linkreturnhomepage">
                 Return to Homepage
-              </a>
+              </Link>
             </div>
           </div>
         </div>
