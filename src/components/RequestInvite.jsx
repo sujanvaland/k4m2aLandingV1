@@ -30,20 +30,27 @@ function RequestInvite() {
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const validateFields = (_formData=formData) => {
+  const validateFields = (_formData = formData) => {
     const fieldErrors = {};
-
-    if (!_formData.fullName) fieldErrors.fullName = "Full Name is required.";
-    if (!_formData.email || !isValidEmail(_formData.email))
-      fieldErrors.email = "A valid email address is required.";
-    if (!_formData.phone || !isValidPhoneNumber(_formData.phone))
-      fieldErrors.phone = "A valid phone number is required.";
-    if (!_formData.city) fieldErrors.city = "City is required.";
-    if (!_formData.journeyDetails)
+  
+    if (!_formData.fullName) 
+      fieldErrors.fullName = "Full name is required.";
+    
+    if (!_formData.email || !isValidEmail(_formData.email)) 
+      fieldErrors.email = "Please enter a valid email.";
+    
+    if (!_formData.phone || !isValidPhoneNumber(_formData.phone)) 
+      fieldErrors.phone = "Please enter a valid phone number.";
+    
+    if (!_formData.city) 
+      fieldErrors.city = "City is required.";
+    
+    if (!_formData.journeyDetails) 
       fieldErrors.journeyDetails = "Journey details are required.";
-
+  
     return fieldErrors;
   };
+  
 
  
 
@@ -54,6 +61,7 @@ function RequestInvite() {
     }
     setFormData(_formData);
     if(isSubmit){
+       setErrors({});
         const fieldErrors = validateFields(_formData);
         if (Object.keys(fieldErrors).length > 0) {
           setErrors(fieldErrors);
@@ -105,7 +113,7 @@ function RequestInvite() {
       if (data) {
         setSuccess(true);
         
-        toast.success('Thank You Sharing information.');
+        // toast.success('Thank You Sharing information.');
         
         navigate("/thank-you", { state: { name: data?.result?.name } });
       } else {
@@ -123,7 +131,16 @@ function RequestInvite() {
 
   const handlePhoneChange = (phone) => {
     if (phone) {
-      setFormData({ ...formData, phone });
+      const _formData={...formData, phone}
+      setFormData(_formData);
+      if(isSubmit){
+        setErrors({});
+         const fieldErrors = validateFields(_formData);
+         if (Object.keys(fieldErrors).length > 0) {
+           setErrors(fieldErrors);
+           return;
+         }
+     }
     }
   };
 
@@ -187,7 +204,7 @@ function RequestInvite() {
                       <p className="error-text">{errors.phone}</p>
                     ) : formData.phone ? (
                       isValidPhoneNumber(formData.phone) ? undefined : (
-                        "Invalid phone number"
+                        <p className="error-text">Please enter a valid phone number.</p>
                       )
                     ) : (
                       ""
