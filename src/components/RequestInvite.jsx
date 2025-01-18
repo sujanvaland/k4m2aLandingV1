@@ -30,7 +30,7 @@ function RequestInvite() {
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const validateFields = (_formData) => {
+  const validateFields = (_formData=formData) => {
     const fieldErrors = {};
 
     if (!_formData.fullName) fieldErrors.fullName = "Full Name is required.";
