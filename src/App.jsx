@@ -13,12 +13,15 @@ import PlayTheRules from "./components/PlayTheRules";
 import Privacy from "./components/Privacy";
 import NotFound from "./components/NotFound";
 import { Bounce, ToastContainer, toast } from "react-toastify";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <Routes>
+      
         <Route
           path="/"
           element={
