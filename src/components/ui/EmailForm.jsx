@@ -8,6 +8,7 @@ export default function EmailForm({
   placeholder = "Enter your e-mail",
   notice = "Request invite to get access",
   className = "",
+  classNameNote="textalcenter"
 }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -59,7 +60,7 @@ export default function EmailForm({
       setLoading(false);
       if(data.success){
         setSuccess(true);
-        toast.success('Email Sent Sucessfully!');
+        // toast.success('Email Sent Sucessfully!');
 
         // Navigate to the next page or show success message
         navigate("/request-invite", {state:{email, id: data?.result?.id}});
@@ -104,7 +105,7 @@ export default function EmailForm({
         </div>
       )}
       {notice && !success && (
-        <div className="hero-notice martop10 textalcenter">{notice}</div>
+        <div className={`hero-notice martop10 ${classNameNote}`}>{notice}</div>
       )}
     </div>
   );

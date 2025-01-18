@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import EmailForm from "../components/ui/EmailForm";
 import EyebrowPill from "../components/ui/EyebrowPill";
 import "./styles/custom.css"
@@ -258,7 +259,7 @@ export default function Home() {
                   <div className="country-tag-wrap cc-6">
                     <div className="country-tag cc-9">
                       <div>
-                        <a href="request_invite.html">150+ More</a>
+                        <a >150+ More</a>
                       </div>
                     </div>
                   </div>
@@ -324,9 +325,9 @@ export default function Home() {
                   <div className="cta-banner-price">Awaken</div>
                 </div>
                 <div className="form-wrap cc-cta-banner flexcolumn">
-                  <a href="manifesto.html" className="btn btnread">
+                  <Link to="/manifesto" className="btn btnread">
                     Read Our Manifesto
-                  </a>
+                  </Link>
                   <span className="subtitlenotes">
                     What will happen to earth between 2025 and 2035?
                   </span>

@@ -53,16 +53,16 @@ export default function Header() {
                 >
                   Research
                 </Link>
-                <Link to="/careers" target="_blank" className="nav-link">
+                {/* <Link to="/careers" target="_blank" className="nav-link">
                   Careers
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className="nav-right">
-              <Link to="/signin" className="cta cc-nav">
+              {/* <Link to="/signin" className="cta cc-nav">
                 <div className="cta-bg u-rainbow u-blur-perf"></div>
                 <div className="cta-inner cc-nav">Sign in</div>
-              </Link>
+              </Link> */}
               <button className="nav-mobile-btn" onClick={toggleMenu}>
                 <div className="hamburger_1_wrap">
                   <div className="hamburger_1_line"></div>

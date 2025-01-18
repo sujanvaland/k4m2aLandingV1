@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput, {
@@ -26,32 +26,46 @@ function RequestInvite() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(false);
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
-  const validateFields = () => {
+  const validateFields = (_formData) => {
     const fieldErrors = {};
 
-    if (!formData.fullName) fieldErrors.fullName = "Full Name is required.";
-    if (!formData.email || !isValidEmail(formData.email))
+    if (!_formData.fullName) fieldErrors.fullName = "Full Name is required.";
+    if (!_formData.email || !isValidEmail(_formData.email))
       fieldErrors.email = "A valid email address is required.";
-    if (!formData.phone || !isValidPhoneNumber(formData.phone))
+    if (!_formData.phone || !isValidPhoneNumber(_formData.phone))
       fieldErrors.phone = "A valid phone number is required.";
-    if (!formData.city) fieldErrors.city = "City is required.";
-    if (!formData.journeyDetails)
+    if (!_formData.city) fieldErrors.city = "City is required.";
+    if (!_formData.journeyDetails)
       fieldErrors.journeyDetails = "Journey details are required.";
 
     return fieldErrors;
   };
 
+ 
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const _formData ={
+        ...formData, [name]: value
+    }
+    setFormData(_formData);
+    if(isSubmit){
+        const fieldErrors = validateFields(_formData);
+        if (Object.keys(fieldErrors).length > 0) {
+          setErrors(fieldErrors);
+          return;
+        }
+    }
+    
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsSubmit(true)
     const fieldErrors = validateFields();
     if (Object.keys(fieldErrors).length > 0) {
       setErrors(fieldErrors);
@@ -84,9 +98,10 @@ function RequestInvite() {
       }
 
       const data = await response.json();
-      console.log(data);
+      
 
       setLoading(false);
+      setIsSubmit(false)
       if (data) {
         setSuccess(true);
         

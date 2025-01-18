@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./styles/custom.css"
 import "./styles/styles.css"
+import EmailForm from "./ui/EmailForm";
 
 function Manifesto() {
   useEffect(() => {
@@ -239,39 +240,7 @@ function Manifesto() {
                   <br />
                   Let me in.
                 </h2>
-                <div className="form-wrap w-form">
-                  <form
-                    id="signup-form"
-                    name="wf-form-Signup-Form-Manifesto-Footer"
-                    data-name="Signup Form Manifesto Footer"
-                    method="get"
-                    data-wf-page-id="6720bdf4eebab0e211da2789"
-                    data-wf-element-id="f520b14d-f1f6-998b-e2f4-ce961583d0dd"
-                  >
-                    <div className="input-wrap">
-                      <input
-                        className="input w-input"
-                        maxLength="256"
-                        name="Email"
-                        data-name="Email"
-                        placeholder="Enter your e-mail"
-                        type="email"
-                        id="email"
-                        required=""
-                      />
-                      <div className="input-bg u-rainbow u-blur-perf"></div>
-                      <input
-                        type="submit"
-                        data-wait="Sign up"
-                        className="form-submit w-button"
-                        value="Request"
-                      />
-                    </div>
-                  </form>
-                  <div className="hero-notice martop10 textalcenter">
-                    Request invite to get access
-                  </div>
-                </div>
+               <EmailForm />
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import EmailForm from './ui/EmailForm'
 
 function Research() {
   return (
@@ -145,24 +146,8 @@ function Research() {
                                 <div>Intelligent tools for personal spiritual growth</div>
                             </li>
                         </ul>
-                        <div className="form-wrap cc-full-width w-form">
-                            <form
-                                id="signup-form"
-                                name="wf-form-Signup-Form-Research-Footer"
-                                data-name="Signup Form Research Footer"
-                                method="get"
-                                data-wf-page-id="6728b13d3a68324f24e32e33"
-                                data-wf-element-id="caf2c832-23c6-51a2-fec2-4b82481ca0ab"
-                            >
-                                <div className="input-wrap">
-                                    <input className="input cc-cta-banner w-input" maxLength="256" name="Email" data-name="Email" placeholder="Enter your e-mail" type="email" id="email" required="" />
-                                    <div className="input-bg u-rainbow u-blur-perf"></div>
-                                    <input type="submit" data-wait="Sign up" className="form-submit w-button" value="Request" />
-                                </div>
-                            </form>
-                            <div className="hero-notice martop10 textleft marleft10">Request invite to get access</div>
-                          
-                        </div>
+                        <EmailForm classNameNote="textleft marleft10"/>
+                        
                     </div>
                     <div id="w-node-_0b8d130b-6d0c-8266-cb88-3b4744645450-24e32e33" className="research-join-image">
    
