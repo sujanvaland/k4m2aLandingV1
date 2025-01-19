@@ -3820,7 +3820,7 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
 }
 
 .hamburger_1_line {
-    height: var(--thickness);
+    height:1.5px;
     background-color: currentColor;
     flex: none;
     width: 100%;

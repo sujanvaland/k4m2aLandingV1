@@ -66,6 +66,7 @@ export default function Header() {
               <button className="nav-mobile-btn" onClick={toggleMenu}>
                 <div className="hamburger_1_wrap">
                   <div className="hamburger_1_line"></div>
+                  <div class="hamburger_embed w-embed" style={{height:7, position:"relative"}}></div>
                   <div className="hamburger_1_line"></div>
                 </div>
               </button>
