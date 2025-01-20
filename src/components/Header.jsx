@@ -36,7 +36,7 @@ export default function Header() {
         <div className="container">
           <div className="nav-inner">
             <div className="nav-left">
-              <Link to="/" className="nav-logo" onClick={handleClick}>
+              <Link to="/" className="nav-logo" onClick={(e)=>handleClick(e, "/")}>
                 <div className="svg-embed cc-logo-word">
                   {isResearchPage ? (
                     <img src="/images/logo-main-wh.svg" class="whitelogo" />
