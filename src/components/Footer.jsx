@@ -17,7 +17,7 @@ export default function Footer() {
               <Link to="/" className="footer-link">Home</Link>
               <Link to="/manifesto" className="footer-link">Manifesto</Link>
               <Link to="/research" className="footer-link">Research</Link>
-              <Link to="/careers" className="footer-link">Careers</Link>
+              {/* <Link to="/careers" className="footer-link">Careers</Link> */}
             </div>
 
             <div className="footer-cell">

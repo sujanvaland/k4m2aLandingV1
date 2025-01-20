@@ -56,9 +56,12 @@ export default function EmailForm({
       }
 
       const data = await response.json();
-      console.log(data)
+     
       setLoading(false);
-      if(data.success){
+      if(data.result.toLowerCase()  == "already registered"){
+        toast.info('You are already on the waitlist.');
+      }
+      else if(data.success){
         setSuccess(true);
         // toast.success('Email Sent Sucessfully!');
 
