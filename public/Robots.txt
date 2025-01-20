@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://k4m2a.com/sitemap.xml

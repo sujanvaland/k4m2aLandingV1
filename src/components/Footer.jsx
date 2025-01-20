@@ -29,8 +29,8 @@ export default function Footer() {
 
             <div className="footer-cell">
               <div className="footer-heading">The Cool</div>
-              <a href="#" className="footer-link">X</a>
-              <a href="#" className="footer-link">Instagram</a>
+              <a href="https://x.com/k4m2a" className="footer-link">X</a>
+              <a href="https://www.instagram.com/k4m2a" className="footer-link">Instagram</a>
             </div>
           </div>
         </div>

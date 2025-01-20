@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://k4m2a.com/</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/manifesto</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/research</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/terms</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/rules</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/privacy</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://k4m2a.com/request-invite</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
+  <url>
+    <loc>https://k4m2a.com/*</loc>
+    <lastmod>2025-01-20</lastmod>
+    <priority>0.50</priority>
+  </url>
+</sitemapindex>
