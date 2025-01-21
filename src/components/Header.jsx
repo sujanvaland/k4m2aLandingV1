@@ -27,6 +27,21 @@ export default function Header() {
     // }
   };
 
+  useEffect(() => {
+    const handleBackButton = () => {
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+        document.body.style.overflow = "auto"; // Reset body overflow
+      }
+    };
+
+    window.addEventListener("popstate", handleBackButton);
+
+    return () => {
+      window.removeEventListener("popstate", handleBackButton);
+    };
+  }, [isMenuOpen]);
+
   return (
     <nav
       className={`nav ${isResearchPage ? "blacknav" : ""} ${
