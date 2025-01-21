@@ -98,7 +98,7 @@ export default function EmailForm({
           className="form-submit w-button"
           disabled={loading}
         >
-          {loading ? "Submitting..." : buttonText}
+          {loading ? "Requesting..." : buttonText}
         </button>
       </form>
       {error && <div className="error-message martop10">{error}</div>}

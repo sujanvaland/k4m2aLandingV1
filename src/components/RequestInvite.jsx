@@ -179,7 +179,15 @@ function RequestInvite() {
                     }`}
                     placeholder="Enter Full Name"
                     value={formData.fullName}
-                    onChange={handleChange}
+                    // onChange={handleChange}
+                    onChange={(e) => {
+                      const value = e.target.value;
+                      const capitalizedValue = value
+                      .split(" ")
+                      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                      .join(" ");
+                      handleChange({ target: { name: "fullName", value: capitalizedValue } });
+                    }}
                   />
                   {errors.fullName && (
                     <p className="error-text">{errors.fullName}</p>
