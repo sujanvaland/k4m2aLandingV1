@@ -107,10 +107,15 @@ function RequestInvite() {
 
       const data = await response.json();
       
-
+      console.log(data)
       setLoading(false);
       setIsSubmit(false)
-      if (data) {
+
+      if(typeof data?.result === 'string' && data?.result?.toLowerCase()  == "phone number already registered")
+      {
+        toast.error('Phone Number already registered.');
+      }
+      else if (data.success) {
         setSuccess(true);
         
         // toast.success('Thank You Sharing information.');

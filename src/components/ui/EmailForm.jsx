@@ -8,7 +8,8 @@ export default function EmailForm({
   placeholder = "Enter your e-mail",
   notice = "Request invite to get access",
   className = "",
-  classNameNote="textalcenter"
+  classNameNote="textalcenter",
+  onSuccess =()=>{}
 }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -57,16 +58,24 @@ export default function EmailForm({
 
       const data = await response.json();
      
+     
       setLoading(false);
-      if(data.result.toLowerCase()  == "already registered"){
-        toast.info('You are already on the waitlist.');
+      if(typeof data?.result === 'string' && data?.result?.toLowerCase()  == "already registered"){
+        toast.error('You are already on the waitlist.');
       }
       else if(data.success){
         setSuccess(true);
+        onSuccess()
+
         // toast.success('Email Sent Sucessfully!');
 
         // Navigate to the next page or show success message
         navigate("/request-invite", {state:{email, id: data?.result?.id}});
+
+         //reset
+         setEmail("")
+         setSuccess(false)
+         setError("")
       }
       else{
         toast.error('Something went wrong. Please try again.');
@@ -74,6 +83,7 @@ export default function EmailForm({
       }
       
     } catch (error) {
+      console.log(error)
       setLoading(false);
       toast.error('Something went wrong. Please try again.');
       // setError(error.message || "Something went wrong. Please try again.");

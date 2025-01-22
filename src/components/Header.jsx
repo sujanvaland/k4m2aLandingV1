@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import EmailForm from "./ui/EmailForm";
 
@@ -197,7 +197,7 @@ export default function Header() {
                   Play by the Rules
                 </Link>
 
-                <EmailForm className="cc-mobile-menu w-form marbtm35" />
+                <EmailForm className="cc-mobile-menu w-form marbtm35" onSuccess={toggleMenu} />
 
                 <img
                   src="images/mobile-menu-divider.png"
