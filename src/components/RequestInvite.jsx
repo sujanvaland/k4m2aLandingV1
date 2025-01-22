@@ -107,7 +107,7 @@ function RequestInvite() {
 
       const data = await response.json();
       
-      console.log(data)
+      
       setLoading(false);
       setIsSubmit(false)
 

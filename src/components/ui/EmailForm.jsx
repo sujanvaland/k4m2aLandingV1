@@ -83,7 +83,7 @@ export default function EmailForm({
       }
       
     } catch (error) {
-      console.log(error)
+    
       setLoading(false);
       toast.error('Something went wrong. Please try again.');
       // setError(error.message || "Something went wrong. Please try again.");
