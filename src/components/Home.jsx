@@ -279,7 +279,7 @@ export default function Home() {
               >
                 <div className="cta-banner-left-content">
                   <h3 className="heading-l fnt35">
-                    Claim your spiritual profile today.
+                    Your own spiritual profile.
                   </h3>
                   <ul role="list" className="steps-list w-list-unstyled">
                     <li className="steps-list-item">
@@ -329,7 +329,7 @@ export default function Home() {
                     Read Our Manifesto
                   </Link>
                   <span className="subtitlenotes">
-                    What will happen to earth between 2025 and 2035?
+                    What will happen to earth in next 100 years?
                   </span>
                 </div>
                 <img

@@ -104,7 +104,7 @@ function Research() {
                             <div className="eyebrow-pill-inner"><div>Join K4M2A</div></div>
                             <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
                         </div>
-                        <h2 className="section-heading">Explore the Future. with K4M2A</h2>
+                        <h2 className="section-heading">Explore the Future.</h2>
                         <ul role="list" className="steps-list cc-research w-list-unstyled">
                             <li className="list-item">
                                 <div className="list-item-icon">

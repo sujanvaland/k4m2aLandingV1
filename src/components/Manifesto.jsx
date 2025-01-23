@@ -193,40 +193,22 @@ function Manifesto() {
                 </div>
               </div>
               <h2 className="section-heading cc-small">
-                Imagine a world where humanity thrives where enlightenment
-                spreads like sunlight, freely touching every soul. A world where
-                knowledge flows without limits, and spiritual connection is as
-                abundant as air.
+              Imagine a world where enlightenment spreads like sunlight reaching everyone, a world where knowledge flows without limits, and spiritual connection is as abundant as air.
               </h2>
               <p className="manifesto-paragraph">
-                No barriers of language, culture, or philosophy. No isolation or
-                division. Just a seamless, global community united in the
-                pursuit of awakening.
+              No barriers of language, culture, or philosophy. No isolation or division. Just a seamless, global community united in the pursuit of enlightenment. This isn’t just a dream; it’s the future we are building at K4M2A.
                 <br />
                 ‍<br />
-                No barriers of language, culture, or philosophy. No isolation or
-                division. Just a seamless, global community united in the
-                pursuit of awakening. This isn’t just a dream; it’s the future
-                we’re building at K4M2A.
+                We’ve reimagined what it means to connect spiritually and created a platform designed to remove centuries of barriers to global awakening.
                 <br />
                 <br />
-                We’ve reimagined what it means to connect spiritually and
-                created a platform designed to remove centuries of barriers to
-                enlightenment.
+                As we move into a future defined by deeper connections and spiritual awakening, we’re creating a space that supports our mission to enlighten humanity, because technology should uplift human potential, not confine it.
+
                 <br />
                 <br />
-                As we move into a future defined by deeper connections and
-                spiritual awakening, we’re creating a space that supports our
-                mission to enlighten humanity, because technology should uplift
-                human potential, not confine it.
+                K4M2A places this future in your hands, the question is: Will you take the next step?
                 <br />
-                <br />
-                K4M2A places this future in your hands, a world where
-                enlightenment spreads like sunlight, reaching everyone.
-                <br />
-                <br />
-                The question is: Will you take the next step?
-                <br />
+                
               </p>
             </div>
           </div>
