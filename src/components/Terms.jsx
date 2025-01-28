@@ -11,7 +11,7 @@ function Terms() {
                         <div className="eyebrow-pill-inner"><div>Terms</div></div>
                         <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
                     </div>
-                    <h1 className="section-heading cc-large">K4M2A Terms of Use</h1>
+                    <h1 className="section-heading cc-large">Terms of Use</h1>
                 </div>
                 <div className="legal-rt w-richtext">
                     <p>

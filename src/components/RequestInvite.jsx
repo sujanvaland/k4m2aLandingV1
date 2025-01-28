@@ -157,11 +157,11 @@ function RequestInvite() {
             <div className="manifesto-header">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
-                  <div>Request Invite</div>
+                  <div>Join the Circle</div>
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
               </div>
-              <h1 className="home-hero-heading">Join the Circle</h1>
+              <h1 className="home-hero-heading">Request Invite</h1>
               <p className="subheading maxw530">
                 Request an invite to join a community of truth-seekers and
                 science enthusiasts working together to explore life's most
@@ -275,7 +275,7 @@ function RequestInvite() {
                       errors.journeyDetails ? "input-error" : ""
                     }`}
                     maxLength={500}
-                    placeholder="Tell us about your journey, what are you seeking?"
+                    placeholder="Tell us a bit about your spiritual journey"
                     value={formData.journeyDetails}
                     onChange={handleChange}
                   ></textarea>
@@ -289,7 +289,7 @@ function RequestInvite() {
                     className="btnsubmit w-button"
                     disabled={loading}
                   >
-                    {loading ? "Submitting..." : "Request Submit"}
+                    {loading ? "Submitting..." : "Submit"}
                   </button>
                 </li>
               </ul>

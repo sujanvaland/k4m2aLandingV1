@@ -24,7 +24,7 @@ function PlayTheRules() {
                 help keep K4M2A a place where all members can grow, learn, and
                 share their spiritual journeys.
               </p>
-              <h2>1. Be Freen</h2>
+              <h2>1. Be Free</h2>
               <p>
                 K4M2A is your space to explore, learn, and share freely. Use the
                 platform to express your spiritual beliefs, engage with

@@ -128,8 +128,7 @@ function Manifesto() {
           <div className="page-padding">
             <div className="container container--small cc-manifesto">
               <h2 className="section-heading cc-manifesto">
-                It's 2025, and it looks like we as humanity will not survive
-                2035.
+                It's 2025, and it seems that we as humans might not survive to see the next 100 years.
               </h2>
               <p className="manifesto-paragraph">
                 When you step out your front door, you don’t think twice about
