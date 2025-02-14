@@ -14,6 +14,7 @@ import Privacy from "./components/Privacy";
 import NotFound from "./components/NotFound";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
+import SignIn from "./components/SignIn";
 
 
 function App() {
@@ -76,6 +77,14 @@ function App() {
             <Layout>
               <RequestInvite />
             </Layout>
+          }
+        />
+         <Route
+          path="/signin"
+          element={
+            // <Layout>
+              <SignIn />
+            // </Layout>
           }
         />
         <Route

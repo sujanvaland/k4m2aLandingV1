@@ -106,10 +106,10 @@ export default function Header() {
               </div>
             </div>
             <div className="nav-right">
-              {/* <Link to="/signin" className="cta cc-nav">
+              <Link to="/signin" className="cta cc-nav">
                 <div className="cta-bg u-rainbow u-blur-perf"></div>
                 <div className="cta-inner cc-nav">Sign in</div>
-              </Link> */}
+              </Link>
               <button className="nav-mobile-btn" onClick={toggleMenu}>
                 <div className="hamburger_1_wrap">
                   <div className="hamburger_1_line"></div>
@@ -163,6 +163,12 @@ export default function Header() {
                 >
                   Research
                 </Link>
+              </div>
+              <div className="mobile-menu-fade">
+              <Link to="/signin" className="cta ">
+                <div className="cta-bg u-rainbow u-blur-perf"></div>
+                <div className="cta-inner ">Sign in</div>
+              </Link>
               </div>
               <div className="mobile-menu-fade">
                 <img

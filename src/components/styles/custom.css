@@ -4909,3 +4909,116 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
     font-size: 1rem;
     margin-top: 10px;
   }
+  .signin-height{
+    /* min-width: 600px; */
+    padding-bottom: 200px;
+  }
+  .button-center{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+  }
+
+  .login-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .left-panel {
+    flex: 1;
+    background-color: #000;
+    position: relative;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .left-panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1) 0px,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px,
+      transparent 10px
+    ); */
+    transform: rotate(-45deg) scale(2);
+    pointer-events: none;
+  }
+  
+  .left-panel .content {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+
+.star-logo {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .left-panel h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .left-panel p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+  
+  .left-panel footer {
+    margin-top: auto;
+    opacity: 0.7;
+    font-size: 0.875rem;
+  }
+  
+  .right-panel {
+    flex: 1;
+    /* background: white; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    /* padding: 2rem; */
+    height: 100vh;
+  }
+
+  .small-logo{
+    width: 200px;
+    height: 200px;
+  }
+  .signin-image{
+    height: 30vh;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) { 
+    .left-panel {
+      display: none;
+    }
+    
+    .right-panel {
+      flex: 1;
+      width: 100%;
+    }
+  }
+  
