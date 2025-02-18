@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "react-phone-number-input/style.css";
 import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 import { API_URL } from "../api_config";
@@ -16,6 +16,7 @@ function SignIn() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [isSubmit, setIsSubmit] = useState(false);
+  const [isShowpassword, setIsShowpassword]=useState(false);
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -49,6 +50,10 @@ function SignIn() {
     }
   };
 
+  const showpassword=()=>{
+    setIsShowpassword((prev) => !prev);
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmit(true);
@@ -72,7 +77,7 @@ function SignIn() {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-container loginpagebox">
       <div className="left-panel">
         <div className="content">
           <img src="/images/logo-main-wh.svg" className="whitelogo desktop small-logo" />
@@ -89,15 +94,19 @@ function SignIn() {
             Skip repetitive and manual sales-marketing tasks. Get highly
             productive through automation and save tons of time!
           </p>
-          <footer>© 2022 SaleSkip. All rights reserved.</footer>
+         
         </div>
       </div>
 
       <div className="right-panel">
         <main className="main cc-home">
+         
+          <div className="manifesto-hero-img-wrap">
           <div className="hero cc-manifesto">
-            <div className="page-padding">
+            <img src="/images/logo.png" class="deviceLogo"/> 
+            <div className="page-padding">           
               <div className="container">
+              
                 <div className="manifesto-header">
                   <h1 className="home-hero-heading">Sign In</h1>
                   <p className="subheading">Access your account</p>
@@ -105,8 +114,8 @@ function SignIn() {
               </div>
             </div>
           </div>
-          <div className="manifesto-hero-img-wrap">
             <div className="formmainbox signin-height">
+            
               <form onSubmit={handleSubmit}>
                 <ul>
                   <li>
@@ -126,7 +135,7 @@ function SignIn() {
                   </li>
                   <li>
                     <input
-                      type="password"
+                     type={isShowpassword ? "text" : "password"}
                       name="password"
                       className={`form-control input ${
                         errors.password ? "input-error" : ""
@@ -135,9 +144,20 @@ function SignIn() {
                       value={formData.password}
                       onChange={handleChange}
                     />
+                    {
+                      formData.password!='' && 
+                      <button type="button" class="btnshowpassword" onClick={showpassword}> 
+                        <img src={isShowpassword ? "/images/eye.svg" : "/images/crossed-eye.svg"} className="showpassword" />
+                      
+                      </button>
+                    }
+                    
                     {errors.password && (
                       <p className="error-text">{errors.password}</p>
                     )}
+                  </li>
+                  <li className="forgotpass">
+                   <Link> Forgot password?</Link>
                   </li>
                   <li className="button-center">
                     <button
@@ -150,7 +170,9 @@ function SignIn() {
                   </li>
                 </ul>
               </form>
+              <footer>© 2022 SaleSkip. All rights reserved.</footer>
             </div>
+            
           </div>
         </main>
       </div>

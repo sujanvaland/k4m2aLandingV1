@@ -5011,7 +5011,60 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
     object-fit: contain;
   }
 
-  @media (max-width: 768px) { 
+  .loginpagebox .manifesto-hero-img-wrap{
+    margin-top: 0px; margin-bottom: 0px; height: 100vh;
+    border-radius: 0px; justify-content: center;
+  }
+  .loginpagebox .hero{
+    padding-top:0px; margin-bottom: 45px;
+  }
+  .loginpagebox .formmainbox.signin-height{
+padding-bottom: 0px;
+  }
+  .loginpagebox .main.cc-home{
+    border-radius: 0px;
+  }
+  .loginpagebox  .btnsubmit{
+    width: 100%; inset:auto; margin-left: 0px;
+    font-size: 18px; padding:20px 30px;
+  }
+  .loginpagebox footer{
+    position: absolute; bottom:20px;
+  }
+  .loginpagebox .formmainbox .showpassword{
+    width: 20px;
+  }
+  .loginpagebox .btnshowpassword{
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    z-index: 9; background: #ffffff;
+    padding: 14px;
+  }
+  .loginpagebox  .formmainbox ul li {position: relative;
+
+  }
+  .loginpagebox .deviceLogo{
+    display: none;     
+  }
+  .loginpagebox .forgotpass{
+    text-align: right; margin-bottom: 15px!important; font-size: 14px;
+  }
+  .loginpagebox  .small-logo{
+    height: auto; width: 150px;
+  }
+  .loginpagebox .left-panel .content{
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .loginpagebox .signin-image{
+height: 55vh;
+  }
+
+  @media (max-width: 940px) { 
+ 
+    .loginpagebox .manifesto-hero-img-wrap{
+        height: auto; min-height: 100vh;
+    }
     .left-panel {
       display: none;
     }
@@ -5020,5 +5073,29 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
       flex: 1;
       width: 100%;
     }
+   
+      .loginpagebox  .home-hero-heading{
+        margin-bottom:10px; font-size: 40px;
+      }
+      .loginpagebox .deviceLogo{
+        display: block; max-width: 200px; position: relative; 
+        margin: 10px auto 35px;
+      }
+     
+  }
+
+  @media (max-width: 768px) { 
+    .loginpagebox .deviceLogo{
+        display: block; max-width: 200px; position: absolute; top:30px;
+        margin: 0px;
+      }
+    .loginpagebox .btnsubmit{
+        padding:14px 30px;
+      }
+      .loginpagebox .btnshowpassword{
+        padding: 8px;
+    }
   }
   
+
+ 
