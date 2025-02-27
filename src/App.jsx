@@ -83,9 +83,9 @@ function App() {
          <Route
           path="/report-issue"
           element={
-            <Layout>
+            // <Layout>
               <BugReportForm />
-            </Layout>
+            // </Layout>
           }
         />
          <Route
