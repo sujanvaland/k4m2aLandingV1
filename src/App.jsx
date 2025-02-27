@@ -15,6 +15,7 @@ import NotFound from "./components/NotFound";
 import { Bounce, ToastContainer, toast } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
 import SignIn from "./components/SignIn";
+import BugReportForm from "./components/ReportABug";
 
 
 function App() {
@@ -72,6 +73,22 @@ function App() {
           }
         />
         <Route
+          path="/request-invite"
+          element={
+            <Layout>
+              <RequestInvite />
+            </Layout>
+          }
+        />
+         <Route
+          path="/report-issue"
+          element={
+            <Layout>
+              <BugReportForm />
+            </Layout>
+          }
+        />
+         <Route
           path="/request-invite"
           element={
             <Layout>
