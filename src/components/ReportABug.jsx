@@ -140,7 +140,7 @@ export default function BugReportForm() {
           <div className="formmainbox">
             <form onSubmit={handleSubmit}>
               <ul>
-                <li>
+                {/* <li>
                   <input
                     type="text"
                     name="fullName"
@@ -151,9 +151,9 @@ export default function BugReportForm() {
                     onChange={handleChange}
                   />
                   {errors.fullName && <p className="error-text">{errors.fullName}</p>}
-                </li>
+                </li> */}
 
-                <li>
+                {/* <li>
                   <input
                     type="email"
                     name="email"
@@ -164,7 +164,7 @@ export default function BugReportForm() {
                     onChange={handleChange}
                   />
                   {errors.email && <p className="error-text">{errors.email}</p>}
-                </li>
+                </li> */}
 
                 <li>
                   <input
