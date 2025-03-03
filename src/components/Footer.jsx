@@ -53,6 +53,7 @@ export default function Footer() {
               >
                 Manifesto
               </Link>
+              
               <Link
                 onClick={(e) => handleClick(e, "/research")}
                 to="/research"
@@ -61,6 +62,24 @@ export default function Footer() {
                 }`}
               >
                 Research
+              </Link>
+              <Link
+                onClick={(e) => handleClick(e, "/career")}
+                to="/career"
+                className={`footer-link ${
+                  location.pathname === "/careers" ? "w--current" : ""
+                }`}
+              >
+                Career
+              </Link>
+              <Link
+                onClick={(e) => handleClick(e, "/security")}
+                to="/security"
+                className={`footer-link ${
+                  location.pathname === "/security" ? "w--current" : ""
+                }`}
+              >
+                Security
               </Link>
               {/* <Link to="/careers" className={`footer-link ${
                     location.pathname === "/" ? "w--current" : ""
@@ -95,6 +114,24 @@ export default function Footer() {
                 }`}
               >
                 Privacy
+              </Link>
+              <Link
+                onClick={(e) => handleClick(e, "/whatisk4m2a")}
+                to="/whatisk4m2a"
+                className={`footer-link ${
+                  location.pathname === "/whatisk4m2a" ? "w--current" : ""
+                }`}
+              >
+                What is K4M2A?
+              </Link>
+              <Link
+                onClick={(e) => handleClick(e, "/blog")}
+                to="/blog"
+                className={`footer-link ${
+                  location.pathname === "/blog" ? "w--current" : ""
+                }`}
+              >
+                Blog
               </Link>
             </div>
 

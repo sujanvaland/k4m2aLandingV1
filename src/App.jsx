@@ -16,6 +16,11 @@ import { Bounce, ToastContainer, toast } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
 import SignIn from "./components/SignIn";
 import BugReportForm from "./components/ReportABug";
+import Career from "./components/Career";
+import Security from "./components/Security";
+import Whatisk4m2a from "./components/Whatisk4m2a";
+import Blog from "./components/Blog";
+import BlogDetails from "./components/BlogDetails";
 
 
 function App() {
@@ -109,6 +114,46 @@ function App() {
           element={
             <Layout>
               <ThankYou />
+            </Layout>
+          }
+        />
+        <Route
+          path="/career"
+          element={
+            <Layout>
+              <Career />
+            </Layout>
+          }
+        />
+         <Route
+          path="/security"
+          element={
+            <Layout>
+              <Security />
+            </Layout>
+          }
+        />
+         <Route
+          path="/whatisk4m2a"
+          element={
+            <Layout>
+              <Whatisk4m2a/>
+            </Layout>
+          }
+        />
+        <Route
+          path="/blog"
+          element={
+            <Layout>
+              <Blog/>
+            </Layout>
+          }
+        />
+        <Route
+          path="/blog/:id"
+          element={
+            <Layout>
+              <BlogDetails />
             </Layout>
           }
         />

@@ -81,20 +81,37 @@ function SignIn() {
       <div className="left-panel">
         <div className="content">
           <img src="/images/logo-main-wh.svg" className="whitelogo desktop small-logo" />
-          <img
+            <img
             src="/images/k4m2a-app-1.webp"
             loading="lazy"
             // width="60"
             // height="60"
             alt=""
             className="icon-img signin-image"
-          />
-          {/* <h1>Hello SaleSkip!👋</h1> */}
+          />  
+<div className="logincntBox">
+<h2>Explore the Future</h2>
+          <ul role="list" class="steps-list cc-research w-list-unstyled">
+            <li class="list-item"><div class="list-item-icon">
+              <div class="svg-embed w-embed">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0.805664C5.373 0.805664 0 6.17866 0 12.8057C0 19.4327 5.373 24.8057 12 24.8057C18.627 24.8057 24 19.4327 24 12.8057C23.981 6.18666 18.619 0.824664 12 0.805664ZM19.207 8.51266L10.207 17.5127C10.012 17.7077 9.756 17.8057 9.5 17.8057C9.244 17.8057 8.988 17.7077 8.793 17.5127L4.793 13.5127C4.402 13.1217 4.402 12.4897 4.793 12.0987C5.184 11.7077 5.816 11.7077 6.207 12.0987L9.5 15.3917L17.793 7.09866C18.184 6.70766 18.816 6.70766 19.207 7.09866C19.598 7.48966 19.598 8.12166 19.207 8.51266Z" fill="#B0B0B0"></path></svg>
+                
+                </div></div><div>Globally connected spiritual community</div></li>
+                <li class="list-item"><div class="list-item-icon"><div class="svg-embed w-embed">
+                  <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.805664C5.373 0.805664 0 6.17866 0 12.8057C0 19.4327 5.373 24.8057 12 24.8057C18.627 24.8057 24 19.4327 24 12.8057C23.981 6.18666 18.619 0.824664 12 0.805664ZM19.207 8.51266L10.207 17.5127C10.012 17.7077 9.756 17.8057 9.5 17.8057C9.244 17.8057 8.988 17.7077 8.793 17.5127L4.793 13.5127C4.402 13.1217 4.402 12.4897 4.793 12.0987C5.184 11.7077 5.816 11.7077 6.207 12.0987L9.5 15.3917L17.793 7.09866C18.184 6.70766 18.816 6.70766 19.207 7.09866C19.598 7.48966 19.598 8.12166 19.207 8.51266Z" fill="#B0B0B0"></path></svg>
+                  </div></div><div>Dedicated support for your spiritual journey</div></li>
+                  <li class="list-item"><div class="list-item-icon">
+                    <div class="svg-embed w-embed"><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 0.805664C5.373 0.805664 0 6.17866 0 12.8057C0 19.4327 5.373 24.8057 12 24.8057C18.627 24.8057 24 19.4327 24 12.8057C23.981 6.18666 18.619 0.824664 12 0.805664ZM19.207 8.51266L10.207 17.5127C10.012 17.7077 9.756 17.8057 9.5 17.8057C9.244 17.8057 8.988 17.7077 8.793 17.5127L4.793 13.5127C4.402 13.1217 4.402 12.4897 4.793 12.0987C5.184 11.7077 5.816 11.7077 6.207 12.0987L9.5 15.3917L17.793 7.09866C18.184 6.70766 18.816 6.70766 19.207 7.09866C19.598 7.48966 19.598 8.12166 19.207 8.51266Z" fill="#B0B0B0"></path></svg>
+                    </div></div><div>Intelligent tools for personal spiritual growth</div>
+                    </li></ul>
+     
+           
           <p>
             Skip repetitive and manual sales-marketing tasks. Get highly
             productive through automation and save tons of time!
           </p>
-         
+          </div>
         </div>
       </div>
 
@@ -109,7 +126,7 @@ function SignIn() {
               
                 <div className="manifesto-header">
                   <h1 className="home-hero-heading">Sign In</h1>
-                  <p className="subheading">Access your account</p>
+                  <p className="subheading signinSubhead">Access your account</p>
                 </div>
               </div>
             </div>
@@ -170,7 +187,7 @@ function SignIn() {
                   </li>
                 </ul>
               </form>
-              <footer>© 2022 SaleSkip. All rights reserved.</footer>
+              <footer>© 2025 K4M2A. All rights reserved.</footer>
             </div>
             
           </div>
