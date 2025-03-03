@@ -5,7 +5,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 
 function ThankYou() {
   const location = useLocation();
-  const UserFullName = location.state?.name || "ajay bhafslkdjfklsajfklsajflkjl";
+  const UserFullName = location.state?.name || "";
   return (
     <main className="main cc-home">
       <div
@@ -23,7 +23,7 @@ function ThankYou() {
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
               </div>
-              <h1 className="home-hero-heading thankyouheading" id="tooltip-target" data-tip="fsdfsd">{UserFullName}</h1>
+             {UserFullName && <h1 className="home-hero-heading thankyouheading" id="tooltip-target" data-tip="fsdfsd">{UserFullName}</h1>}
               {/* <button >{UserFullName}</button> */}
       <Tooltip anchorId="tooltip-target" content={UserFullName} />             
               <p className="subheading maxw530 marbtm20">
