@@ -100,6 +100,45 @@ export default function Header() {
                 >
                   Research
                 </Link>
+                <Link
+                  to="/career"
+                  className={`nav-link ${
+                    location.pathname === "/career" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/career")}
+                >
+                  Career
+                </Link>
+
+                <Link
+                  to="/security"
+                  className={`nav-link ${
+                    location.pathname === "/security" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/security")}
+                >
+                  Security
+                </Link>
+
+                <Link
+                  to="/whatisk4m2a"
+                  className={`nav-link ${
+                    location.pathname === "/whatisk4m2a" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/whatisk4m2a")}
+                >
+                  What is K4M2A?
+                </Link>
+
+                <Link
+                  to="/blog"
+                  className={`nav-link ${
+                    location.pathname.startsWith("/blog") ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/blog")}
+                >
+                  Blog
+                </Link>
                 {/* <Link to="/careers" target="_blank" className="nav-link">
                   Careers
                 </Link> */}
@@ -165,10 +204,58 @@ export default function Header() {
                 </Link>
               </div>
               <div className="mobile-menu-fade">
-              <Link to="/signin" className="cta ">
-                <div className="cta-bg u-rainbow u-blur-perf"></div>
-                <div className="cta-inner ">Sign in</div>
-              </Link>
+                <Link
+                  to="/career"
+                  className={`nav-mobile-link ${
+                    location.pathname === "/career" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/career", true)}
+                >
+                  Career
+                </Link>
+              </div>
+
+              <div className="mobile-menu-fade">
+                <Link
+                  to="/security"
+                  className={`nav-mobile-link ${
+                    location.pathname === "/security" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/security", true)}
+                >
+                  Security
+                </Link>
+              </div>
+
+              <div className="mobile-menu-fade">
+                <Link
+                  to="/whatisk4m2a"
+                  className={`nav-mobile-link ${
+                    location.pathname === "/whatisk4m2a" ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/whatisk4m2a", true)}
+                >
+                  What is K4M2A?
+                </Link>
+              </div>
+
+              <div className="mobile-menu-fade">
+                <Link
+                  to="/blog"
+                  className={`nav-mobile-link ${
+                    location.pathname.startsWith("/blog") ? "w--current" : ""
+                  }`}
+                  onClick={(e) => handleClick(e, "/blog", true)}
+                >
+                  Blog
+                </Link>
+              </div>
+
+              <div className="mobile-menu-fade">
+                <Link to="/signin" className="cta ">
+                  <div className="cta-bg u-rainbow u-blur-perf"></div>
+                  <div className="cta-inner ">Sign in</div>
+                </Link>
               </div>
               <div className="mobile-menu-fade">
                 <img
@@ -203,7 +290,10 @@ export default function Header() {
                   Play by the Rules
                 </Link>
 
-                <EmailForm className="cc-mobile-menu w-form marbtm35" onSuccess={toggleMenu} />
+                <EmailForm
+                  className="cc-mobile-menu w-form marbtm35"
+                  onSuccess={toggleMenu}
+                />
 
                 <img
                   src="images/mobile-menu-divider.png"
@@ -220,7 +310,11 @@ export default function Header() {
                 />
 
                 <div className="mobile-menu-social-wrap">
-                  <a href="https://x.com/k4m2a" target="_blank" className="icon-wrap w-inline-block">
+                  <a
+                    href="https://x.com/k4m2a"
+                    target="_blank"
+                    className="icon-wrap w-inline-block"
+                  >
                     <div className="icon-inner">
                       <div className="svg-embed w-embed">
                         <svg
@@ -247,7 +341,11 @@ export default function Header() {
                     </div>
                     <div className="icon-bg u-rainbow u-blur-perf"></div>
                   </a>
-                  <a href="https://www.instagram.com/k4m2a" target="_blank" className="icon-wrap w-inline-block">
+                  <a
+                    href="https://www.instagram.com/k4m2a"
+                    target="_blank"
+                    className="icon-wrap w-inline-block"
+                  >
                     <div className="icon-inner">
                       <div className="svg-embed w-embed">
                         <svg
