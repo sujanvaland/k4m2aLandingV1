@@ -150,7 +150,7 @@ function Manifesto() {
                 for tomorrow.
                 <br />
                 <br />
-                And now, as 2035 approaches, the cracks are everywhere. Floods
+                And now, as 2025 approaches, the cracks are everywhere. Floods
                 and fires are destroying entire communities. Wars over water,
                 energy, faiths and beliefs are getting worse. Hunger, sickness,
                 and displacement are spreading fast.

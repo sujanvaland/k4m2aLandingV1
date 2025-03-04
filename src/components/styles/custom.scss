@@ -2852,7 +2852,7 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
     align-items: center;
     padding: 54px 24px 48px;
     display: flex;
-    overflow: hidden
+    overflow: hidden; margin-bottom: 0px;
 }
 
 .features-card.cc-green {
@@ -2936,17 +2936,17 @@ display: flex; flex-direction: column; justify-content: flex-start; align-items:
 
 .features-visual.cc-assistent {
     max-width: 282px;
-    margin-bottom: auto
+    margin-bottom: 0px
 }
 
 .features-visual.cc-global-numbers {
     max-width: 280px;
-    margin-bottom: auto
+    margin-bottom: 0px
 }
 
 .features-visual.cc-security {
     max-width: 289px;
-    margin-bottom: auto
+    margin-bottom: 0px
 }
 
 .feature-visual-price {
@@ -5310,7 +5310,7 @@ height: 30vh;
             }
         }
        }
-       .subheading{
+       .newsubheading{
         font-size: 38px!important;
     }
     
@@ -5434,7 +5434,7 @@ height: 30vh;
         transition: 0.3s;
         &:hover {
             background-color: #000000;
-            color: white;
+            color: white; 
           }
           &.active {
             background-color: #000000;
@@ -5531,7 +5531,7 @@ height: 30vh;
 
 
 @media screen and (max-width:982px){
-    .subheading{font-size: 40px!important;
+    .newsubheading{font-size: 40px!important;
     &.signinSubhead{
         font-size: 33px !important;
         color: #5c5c5c;
@@ -5549,7 +5549,7 @@ height: 30vh;
 
 
 @media screen and (max-width:767px){
-    .subheading{font-size: 40px!important;} 
+    .newsubheading{font-size: 40px!important;} 
     .bloglistBox{
         .blogBox{
             width:48.02%;
@@ -5557,6 +5557,7 @@ height: 30vh;
     }
     .newlinkbtns{
         flex-direction: column;
+        background:#ffffff; padding:30px;   
         span,p{
             width: 100%;
         }
@@ -5586,7 +5587,7 @@ height: 30vh;
 }
 
 @media screen and (max-width:465px){
-    .subheading{font-size: 40px!important;} 
+    .newsubheading{font-size: 40px!important;} 
     .bloglistBox{
         .blogBox{
             width:98.02%;

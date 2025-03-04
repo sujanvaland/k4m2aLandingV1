@@ -36,7 +36,7 @@ function Research() {
                     <div className="research-intro-cell">
                         <h2 className="heading-m cc-research">Global<span className="u-text-sec">Collaboration</span></h2>
                         <div className="research-intro-divider"></div>
-                        <div>Bringing together people with a shared interest a awakening.</div>
+                        <div>Bringing together people with a shared interest in awakening.</div>
                     </div>
                     <div className="research-intro-cell">
                         <h2 className="heading-m cc-research">Natively<span className="u-text-sec"> Intelligent</span></h2>

@@ -3075,6 +3075,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 .features-card.cc-green {
@@ -3173,17 +3174,17 @@ p {
 
 .features-visual.cc-assistent {
   max-width: 282px;
-  margin-bottom: auto;
+  margin-bottom: 0px;
 }
 
 .features-visual.cc-global-numbers {
   max-width: 280px;
-  margin-bottom: auto;
+  margin-bottom: 0px;
 }
 
 .features-visual.cc-security {
   max-width: 289px;
-  margin-bottom: auto;
+  margin-bottom: 0px;
 }
 
 .feature-visual-price {
@@ -6166,7 +6167,7 @@ p {
     -o-object-position: center center;
        object-position: center center;
   }
-  .locationContainer .subheading {
+  .locationContainer .newsubheading {
     font-size: 38px !important;
   }
 }
@@ -6622,10 +6623,10 @@ p {
 }
 
 @media screen and (max-width: 982px) {
-  .subheading {
+  .newsubheading {
     font-size: 40px !important;
   }
-  .subheading.signinSubhead {
+  .newsubheading.signinSubhead {
     font-size: 33px !important;
     color: #5c5c5c;
   }
@@ -6637,7 +6638,7 @@ p {
   }
 }
 @media screen and (max-width: 767px) {
-  .subheading {
+  .newsubheading {
     font-size: 40px !important;
   }
   .bloglistBox .blogBox {
@@ -6648,6 +6649,8 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: #ffffff;
+    padding: 30px;
   }
   .newlinkbtns span, .newlinkbtns p {
     width: 100%;
@@ -6691,7 +6694,7 @@ p {
   }
 }
 @media screen and (max-width: 465px) {
-  .subheading {
+  .newsubheading {
     font-size: 40px !important;
   }
   .bloglistBox .blogBox {

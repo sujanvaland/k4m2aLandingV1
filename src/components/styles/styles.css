@@ -36,9 +36,9 @@ section:focus {
     user-select: none;
 }
 
-.u-rainbow {
+/* .u-rainbow {
     background-image: conic-gradient(from 180deg at 50% 50%, #ebf6f2 0deg, #e7f3e0 56.3deg, #e5eff8 118.8deg, #fef1d8 176.4deg, #f7f4fa 237.6deg, #f7dbe5 295.2deg, #ebf6f2 360deg);
-}
+} */
 .cta:hover .cta-bg {
     opacity: 1;
 }
