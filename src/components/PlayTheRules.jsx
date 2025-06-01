@@ -5,17 +5,17 @@ function PlayTheRules() {
     <main className="main cc-home">
       <section className="hero">
         <div className="page-padding">
-          <div className="container container--small">
+          <div className="frontcontainer frontcontainer--small">
             <div className="section-header cc-legal">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
                   <div>Vibe check</div>
                 </div>
-                <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
               <h1 className="section-heading cc-large">Play by the Rules</h1>
             </div>
-            <div className="legal-rt w-richtext">
+            <div className="legal-rt w-richtext termspage">
               <p>
                 At <strong>K4M2A</strong>, our goal is to create a space where
                 spiritual exploration, growth, and connection flourish. To
@@ -30,7 +30,7 @@ function PlayTheRules() {
                 platform to express your spiritual beliefs, engage with
                 like-minded individuals, and fuel your curiosity. Embrace new
                 experiences and share your personal growth in a way that adds to
-                the community's collective wisdom.
+                the community&apos;s collective wisdom.
                 <br />
               </p>
               <h2>2. Keep It Balanced</h2>
@@ -56,7 +56,7 @@ function PlayTheRules() {
               <h2>4. Just for You</h2>
               <p>
                 Your K4M2A account is for personal spiritual use only. We ask
-                that you respect the platform’s focus on individual journeys and
+                that you respect the platform&apos;s focus on individual journeys and
                 experiences. Keep your account personal and authentic, and avoid
                 using it to promote external products or services.
               </p>
@@ -75,14 +75,14 @@ function PlayTheRules() {
                 Please use K4M2A to share wisdom that uplifts others, avoids
                 negative behavior, and nurtures the spiritual journey of all
                 members. Discrimination, hate speech, and harmful behavior have
-                no place in this space, let’s keep the energy positive and
+                no place in this space, let&apos;s keep the energy positive and
                 inspiring.
               </p>
-              <h2>7. Respect Your Space and Others'</h2>
+              <h2>7. Respect Your Space and Others</h2>
               <p>
                 K4M2A is a personal and sacred space for everyone. Please
                 respect the privacy of others by not misusing their content.
-                Engage with others' posts with kindness and respect, always
+                Engage with others&apos; posts with kindness and respect, always
                 remembering that spiritual journeys are unique and should be
                 honored.‍
               </p>
@@ -91,7 +91,7 @@ function PlayTheRules() {
                 <h2> Thank you for Playing by the Rules!</h2>
               </p>
               <p>
-                By following these guidelines, you're helping to create a
+                By following these guidelines, you&apos;re helping to create a
                 supportive, fair, and enriching community for everyone on K4M2A.
                 We appreciate your contributions and look forward to continuing
                 this collective spiritual journey together. Let’s keep the

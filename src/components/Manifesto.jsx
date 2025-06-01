@@ -5,69 +5,61 @@ import EmailForm from "./ui/EmailForm";
 
 function Manifesto() {
   useEffect(() => {
-    // JavaScript code to handle mobile menu toggle
     const nav = document.querySelector(".nav");
-
     const mobileMenuBtn = document.querySelector(".nav-mobile-btn");
-    mobileMenuBtn.addEventListener("click", function () {
-      this.x = ((this.x || 0) + 1) % 2;
-      if (this.x) {
+
+    let isOpen = false; // State variable for tracking menu open/close
+
+    const handleMenuToggle = () => {
+      isOpen = !isOpen; // Toggle state
+      if (isOpen) {
         nav.classList.add("open");
         document.body.style.overflow = "hidden";
       } else {
         nav.classList.remove("open");
         document.body.style.overflow = "auto";
       }
-    });
+    };
+
+    mobileMenuBtn.addEventListener("click", handleMenuToggle);
 
     // JavaScript to handle navLinks delay
     const navLinks = document.querySelectorAll(".mobile-menu-fade");
     let navDelay = 0;
 
-    for (let i = 0; i < navLinks.length; i += 1) {
-      // Explicitly control the increment
-      navDelay += 0.05; // Equivalent to navDelay += 0.05
-      navLinks[i].style.setProperty("--delay", `${navDelay}s`);
-    }
+    navLinks.forEach((link) => {
+      navDelay += 0.05;
+      link.style.setProperty("--delay", `${navDelay}s`);
+    });
 
     // Cleanup event listener on component unmount
     return () => {
-      mobileMenuBtn.removeEventListener("click", function () {
-        this.x = ((this.x || 0) + 1) % 2;
-        if (this.x) {
-          nav.classList.add("open");
-          document.body.style.overflow = "hidden";
-        } else {
-          nav.classList.remove("open");
-          document.body.style.overflow = "auto";
-        }
-      });
+      mobileMenuBtn.removeEventListener("click", handleMenuToggle);
     };
-  }, []); // Empty dependency array to run once when component mounts
+  }, []); // Runs once when component mounts
+
   return (
     <div className="page-wrapper">
       <main className="main cc-home">
         <div
           data-w-id="077155df-02cf-ce52-d236-39089a93392f"
           className="manifesto-hero-trigger"
-        ></div>
+        />
         <header className="hero cc-manifesto">
           <div className="page-padding">
-            <div className="container">
+            <div className="frontcontainer">
               <div className="manifesto-header">
                 <div className="eyebrow-pill">
                   <div className="eyebrow-pill-inner">
                     <div>Our promise</div>
                   </div>
-                  <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                  <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
                 </div>
                 <h1 className="home-hero-heading">
                   Better future <span>for the humanity</span>
                 </h1>
                 <p className="subheading">
-                  Our mission is to create global <br />
-                  spiritual community, to enhance humanity’s potential to
-                  awaken.
+                  Our mission is to protect humanity from extinction by ensuring AI serves us, preventing nuclear world war, and addressing global warming.
                 </p>
               </div>
             </div>
@@ -126,9 +118,9 @@ function Manifesto() {
         </header>
         <section className="section cc-manifesto-intro">
           <div className="page-padding">
-            <div className="container container--small cc-manifesto">
+            <div className="frontcontainer frontcontainer--small cc-manifesto">
               <h2 className="section-heading cc-manifesto">
-                It's 2025, and it seems that we as humans might not survive to see the next 100 years.
+                It&apos;s 2025, and it seems that we as humans might not survive to see the next 100 years.
               </h2>
               <p className="manifesto-paragraph">
                 When you step out your front door, you don’t think twice about
@@ -169,7 +161,7 @@ function Manifesto() {
         </section>
         <section className="section cc-portal">
           <div className="page-padding">
-            <div className="container container--small cc-manifesto">
+            <div className="frontcontainer frontcontainer--small cc-manifesto">
               <div className="section-header cc-manifesto-portal">
                 <img
                   src="images/k4m2a-portal.webp"
@@ -188,14 +180,14 @@ function Manifesto() {
                   That&#x27;s why we built
                 </div>
                 <div className="manifesto-portal-logo w-embed">
-                  <img src="images/logo.png" />
+                  <img src="images/logo.png" alt="logo" />
                 </div>
               </div>
               <h2 className="section-heading cc-small">
-              Imagine a world where enlightenment spreads like sunlight reaching everyone, a world where knowledge flows without limits, and spiritual connection is as abundant as air.
+                Imagine a world where enlightenment spreads like sunlight reaching everyone, a world where knowledge flows without limits, and spiritual connection is as abundant as air.
               </h2>
               <p className="manifesto-paragraph">
-              No barriers of language, culture, or philosophy. No isolation or division. Just a seamless, global community united in the pursuit of enlightenment. This isn’t just a dream; it’s the future we are building at K4M2A.
+                No barriers of language, culture, or philosophy. No isolation or division. Just a seamless, global community united in the pursuit of enlightenment. This isn’t just a dream; it’s the future we are building at K4M2A.
                 <br />
                 ‍<br />
                 We’ve reimagined what it means to connect spiritually and created a platform designed to remove centuries of barriers to global awakening.
@@ -207,21 +199,21 @@ function Manifesto() {
                 <br />
                 K4M2A places this future in your hands, the question is: Will you take the next step?
                 <br />
-                
+
               </p>
             </div>
           </div>
         </section>
         <section className="section cc-manifesto-join">
           <div className="page-padding">
-            <div className="container">
+            <div className="frontcontainer">
               <div className="home-hero-header">
                 <h2 className="section-heading cc-large">
                   I’m interested.
                   <br />
                   Let me in.
                 </h2>
-               <EmailForm />
+                <EmailForm />
               </div>
             </div>
           </div>

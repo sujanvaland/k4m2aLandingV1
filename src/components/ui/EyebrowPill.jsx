@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 
 
 export default function EyebrowPill({ text, link }) {
@@ -16,8 +17,13 @@ export default function EyebrowPill({ text, link }) {
       ) : (
         <Inner />
       )}
-      <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+      <div className="eyebrow-pill-bg u-rainbow u-blur-perf"/>
     </div>
   )
 }
 
+// ✅ Add PropTypes for validation
+EyebrowPill.propTypes = {
+  text: PropTypes.string.isRequired, // Ensures text is required
+  link: PropTypes.string.isRequired // Ensures link is required
+};

@@ -1,54 +1,114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>K4M2A</title>
-    <meta name="description" content="Description of your website here" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Open Graph Tags -->
-    <!-- <meta property="og:title" content="K4M2A" /> -->
-    <!-- <meta property="og:description" content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world." /> -->
-    <!-- <meta property="og:image" content="https://k4m2a.com/images/logo.png" /> -->
-    <!-- <meta property="og:url" content="https://k4m2a.com" /> -->
-    <!-- <meta property="og:type" content="website" /> -->
+<head>
+  <meta charset="utf-8" />
+  <title>K4M2A</title>
+  <meta name="description" content="Description of your website here" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- Optional: Twitter Card Tags -->
-    <meta name="twitter:card" content="https://k4m2a.com/images/meta-logo.jpeg" />
-    <meta name="twitter:title" content="K4M2A" />
-    <meta name="twitter:description" content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world." />
-    <meta name="twitter:image" content="https://k4m2a.com/images/meta-logo.jpeg" />
+  <!-- Open Graph Tags -->
+  <!-- <meta property="og:title" content="K4M2A" /> -->
+  <!-- <meta property="og:description" content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world." /> -->
+  <!-- <meta property="og:image" content="https://k4m2a.com/images/logo.png" /> -->
+  <!-- <meta property="og:url" content="https://k4m2a.com" /> -->
+  <!-- <meta property="og:type" content="website" /> -->
 
-        <!-- MS, fb & Whatsapp -->
+  <!-- Optional: Twitter Card Tags -->
+  <meta name="twitter:card" content="https://k4m2a.com/images/meta-logo.jpeg" />
+  <meta name="twitter:title" content="K4M2A" />
+  <meta name="twitter:description"
+    content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world." />
+  <meta name="twitter:image" content="https://k4m2a.com/images/meta-logo.jpeg" />
 
-    <!-- MS Tile - for Microsoft apps-->
-    <meta name="msapplication-TileImage" content="https://k4m2a.com/images/meta-logo.jpeg">    
+  <!-- MS, fb & Whatsapp -->
 
-    <!-- fb & Whatsapp -->
+  <!-- MS Tile - for Microsoft apps-->
+  <meta name="msapplication-TileImage" content="https://k4m2a.com/images/meta-logo.jpeg">
 
-    <!-- Site Name, Title, and Description to be displayed -->
-    <meta property="og:site_name" content="K4M2A">
-    <meta property="og:title" content="K4M2A">
-    <meta property="og:description" content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world.">
+  <!-- fb & Whatsapp -->
 
-    <!-- Image to display -->
-    <!-- Replace   «example.com/image01.jpg» with your own -->
-    <meta property="og:image" content="https://k4m2a.com/images/meta-logo.jpeg">
+  <!-- Site Name, Title, and Description to be displayed -->
+  <meta property="og:site_name" content="K4M2A">
+  <meta property="og:title" content="K4M2A">
+  <meta property="og:description"
+    content="World's First Spiritual Network | Connect, learn, and share your experiences with spiritual seekers from around the world.">
 
-    <!-- No need to change anything here -->
-    <meta property="og:type" content="website" />
-    <meta property="og:image:type" content="image/jpeg">
+  <!-- Image to display -->
+  <!-- Replace   «example.com/image01.jpg» with your own -->
+  <meta property="og:image" content="https://k4m2a.com/images/meta-logo.jpeg">
 
-    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+  <!-- No need to change anything here -->
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/jpeg">
 
-    <!-- Website to visit when clicked in fb or WhatsApp-->
-    <meta property="og:url" content="https://k4m2a.com">
-  </head>
-  <body> 
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+
+  <!-- Website to visit when clicked in fb or WhatsApp-->
+  <meta property="og:url" content="https://k4m2a.com">
+
+  <!-- Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+  <!-- Critical CSS -->
+  <style>
+    /* Add your critical CSS here */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .loading-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      z-index: 9999;
+    }
+    .loader {
+      width: 48px;
+      height: 48px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('ServiceWorker registration successful');
+          })
+          .catch(err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

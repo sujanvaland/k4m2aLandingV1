@@ -1,23 +1,21 @@
-import { Link } from "react-router-dom";
-import EmailForm from "../components/ui/EmailForm";
-import EyebrowPill from "../components/ui/EyebrowPill";
-import "./styles/custom.css"
-import "./styles/styles.css"
+import { Link } from 'react-router-dom';
+import EmailForm from './ui/EmailForm';
+import EyebrowPill from './ui/EyebrowPill';
 
 export default function Home() {
   return (
     <>
       <header className="hero">
         <div className="page-padding">
-          <div className="container">
+          <div className="frontcontainer">
             <div className="home-hero-header">
               <EyebrowPill text="Heyo! We launched our Alpha!" link="#" />
               <h1 className="home-hero-heading">
-                World's First Spiritual Network
+                World&apos;s First Spiritual Network
               </h1>
               <div className="home-hero-subheading">
                 <p className="subheading">
-                  Connect, learn, and share your experiences with spiritual
+                  Connect&apos; learn&apos; and share your experiences with spiritual
                   seekers from around the world.
                 </p>
               </div>
@@ -26,24 +24,48 @@ export default function Home() {
             </div>
 
             <div className="home-hero-img-wrap homehero">
-              <img
-                src="/images/colorback.webp"
-                alt="Decorative background"
-                className="home-hero-portal"
-              />
-              <div className="home-hero-mockup cc-1">
+              <picture>
+                <source srcSet="/images/colorback.webp" type="image/webp" />
                 <img
+                  src="/images/colorback.webp" // Fallback image in JPEG/PNG
+                  alt="K4M2A Portal"
+                  className="home-hero-portal"
+                />
+              </picture>
+              <div className="home-hero-mockup cc-1">
+                {/* <img
                   src="/images/k4m2a-app-1.webp"
                   alt="App preview 1"
-                  className="u-auto-img"
-                />
+                  className="u-auto-img" loading="lazy"
+                /> */}
+
+                <picture>
+                  <source srcSet="/images/k4m2a-app-1.webp" type="image/webp" />
+                  <img
+                    src="/images/k4m2a-app-1.webp" // Fallback image in JPEG/PNG
+                    alt="K4M2A Portal"
+                    className="u-auto-img"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
               <div className="home-hero-mockup cc-2">
-                <img
+                {/* <img
                   src="/images/k4m2a-app-2.webp"
                   alt="App preview 2"
-                  className="u-auto-img"
-                />
+                  className="u-auto-img" loading="lazy"
+                /> */}
+
+                <picture>
+                  <source srcSet="/images/k4m2a-app-2.webp" type="image/webp" />
+                  <img
+                    src="/images/k4m2a-app-2.webp" // Fallback image in JPEG/PNG
+                    alt="K4M2A Portal"
+                    className="u-auto-img"
+                    loading="lazy"
+                  />
+                </picture>
+
               </div>
             </div>
 
@@ -51,39 +73,66 @@ export default function Home() {
               <div className="hero-highlight-cell">
                 <div className="icon-wrap">
                   <div className="icon-inner">
-                    <img
+                    {/* <img
                       src="/images/hicon_3.png"
                       alt="Icon"
-                      className="icon-img"
-                    />
+                      className="icon-img" loading="lazy"
+                    /> */}
+                    <picture>
+                      <source srcSet="/images/hicon_3.png" type="image/png" />
+                      <img
+                        src="/images/hicon_3.png" // Fallback image in JPEG/PNG
+                        alt="K4M2A Portal"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
-                  <div className="icon-bg u-rainbow u-blur-perf"></div>
+                  <div className="icon-bg u-rainbow u-blur-perf" />
                 </div>
-                <h3 className="heading-m">Judgment-free space to express</h3>
+                <h3 className="heading-m">Judgment-free space</h3>
               </div>
               <div className="hero-highlight-cell">
                 <div className="icon-wrap">
                   <div className="icon-inner">
-                    <img
+                    {/* <img
                       src="/images/hicon_2.png"
                       alt="Icon"
-                      className="icon-img"
-                    />
+                      className="icon-img" loading="lazy"
+                    /> */}
+                    <picture>
+                      <source srcSet="/images/hicon_2.png" type="image/png" />
+                      <img
+                        src="/images/hicon_2.png"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
-                  <div className="icon-bg u-rainbow u-blur-perf"></div>
+                  <div className="icon-bg u-rainbow u-blur-perf" />
                 </div>
                 <h3 className="heading-m">Dwell on the topics that resonate</h3>
               </div>
               <div className="hero-highlight-cell">
                 <div className="icon-wrap">
                   <div className="icon-inner">
-                    <img
+                    {/* <img
                       src="/images/hicon_1.png"
                       alt="Icon"
-                      className="icon-img"
-                    />
+                      className="icon-img" loading="lazy"
+                    /> */}
+                    <picture>
+                      <source srcSet="/images/hicon_1.png" type="image/png" />
+                      <img
+                        src="/images/hicon_1.png"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
                   </div>
-                  <div className="icon-bg u-rainbow u-blur-perf"></div>
+                  <div className="icon-bg u-rainbow u-blur-perf" />
                 </div>
                 <h3 className="heading-m">Escape material algorithms</h3>
               </div>
@@ -92,14 +141,13 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="section">
+      <section className="section homepage">
         <div className="page-padding">
-          <div className="container">
+          <div className="frontcontainer">
             <div className="section-header">
-              <h2 className="section-heading">A Space for Spiritual Exploration</h2>
+              <h2 className="section-heading">Spiritual Exploration</h2>
               <p className="subheading maxw530">
-                Explore diverse spiritual practices and insights to deepen your
-                understanding.
+                Discover&apos; explore and experience every aspect of spirituality in one place.
               </p>
             </div>
             <div className="features-grid">
@@ -108,15 +156,24 @@ export default function Home() {
                 className="features-card cc-green"
               >
                 <div className="features-visual">
-                  <div>
-                    <img src="images/image1.svg" className="desktop" />
-                    <img src="images/image1.svg" className="mobile" />
+                  <div className="sp_imagebox">
+                    <picture>
+                      <source srcSet="/images/image1.svg" media="(max-width: 767px)" />
+                      <source srcSet="/images/image1.svg" media="(min-width: 768px)" />
+                      <img
+                        src="/images/image1.svg"
+                        alt=""
+                        className="responsive-image"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <h4>10K+</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m">Connect</h3>
+                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Philosophies</h3>
                   <p className="subheading cc-features maxw200">
-                    Spiritual seekers from around the globe
+                    Spanning over 2&apos;000 years of earth
                   </p>
                 </div>
               </div>
@@ -125,15 +182,24 @@ export default function Home() {
                 className="features-card cc-blue"
               >
                 <div className="features-visual">
-                  <div>
-                    <img src="images/image2.svg" className="desktop" />
-                    <img src="images/image2.svg" className="mobile" />
+                  <div className="sp_imagebox">
+                    <picture>
+                      <source srcSet="/images/image2.svg" media="(max-width: 767px)" />
+                      <source srcSet="/images/image2.svg" media="(min-width: 768px)" />
+                      <img
+                        src="/images/image2.svg"
+                        alt=""
+                        className="responsive-image"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <h4>48K+</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m">Discover</h3>
+                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Guru&apos;s</h3>
                   <p className="subheading cc-features maxw220">
-                    Every spiritual topics from ancient to modern.
+                    Spanning over 5&apos;000 years of earth
                   </p>
                 </div>
               </div>
@@ -142,15 +208,24 @@ export default function Home() {
                 className="features-card cc-purple"
               >
                 <div className="features-visual">
-                  <div>
-                    <img src="images/image3.svg" className="desktop" />
-                    <img src="images/image3.svg" className="mobile" />
+                  <div className="sp_imagebox">
+                    <picture>
+                      <source srcSet="/images/image3.svg" media="(max-width: 767px)" />
+                      <source srcSet="/images/image3.svg" media="(min-width: 768px)" />
+                      <img
+                        src="/images/image3.svg"
+                        alt=""
+                        className="responsive-image"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <h4>1B</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m">Experience</h3>
+                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Questions</h3>
                   <p className="subheading cc-features maxw220">
-                    Energy of awakening stories that inspire.
+                    Spanning over 100&apos;000 years of earth
                   </p>
                 </div>
               </div>
@@ -160,16 +235,16 @@ export default function Home() {
       </section>
       <section className="section">
         <div className="page-padding">
-          <div className="container">
+          <div className="frontcontainer">
             <div className="section-header cc-coverage">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
                   <div>Wisdom Without Borders</div>
                 </div>
-                <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
               <h2 className="section-heading">
-                Who’s on the platform? Glad you asked.
+                Who&apos;s on the platform? Glad you asked.
               </h2>
               <p className="subheading maxw530">
                 Experience exclusive content from spiritual leaders and teachers
@@ -182,7 +257,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-1">
                     <div className="country-tag cc-1">
                       <div className="country-icon w-embed">
-                        <img src="images/img_osho.png" />
+                        <picture>
+                          <source srcSet="images/img_osho.png" type="image/png" />
+                          <img
+                            src="images/img_osho.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Osho</div>
                     </div>
@@ -190,7 +272,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-2">
                     <div className="country-tag cc-2">
                       <div className="country-icon w-embed">
-                        <img src="images/img_sadguru.png" />
+                        <picture>
+                          <source srcSet="/images/img_sadguru.png" type="image/png" />
+                          <img
+                            src="/images/img_sadguru.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Sadhguru</div>
                     </div>
@@ -198,7 +287,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-4">
                     <div className="country-tag cc-4">
                       <div className="country-icon w-embed">
-                        <img src="images/img_sharon.png" />
+                        <picture>
+                          <source srcSet="/images/img_sharon.png" type="image/png" />
+                          <img
+                            src="/images/img_sharon.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Sharon</div>
                     </div>
@@ -206,7 +302,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-5">
                     <div className="country-tag cc-5">
                       <div className="country-icon w-embed">
-                        <img src="images/img_anandmayi.png" />
+                        <picture>
+                          <source srcSet="/images/img_anandmayi.png" type="image/png" />
+                          <img
+                            src="/images/img_anandmayi.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Anandmayi</div>
                     </div>
@@ -215,7 +318,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-7">
                     <div className="country-tag cc-6">
                       <div className="country-icon w-embed">
-                        <img src="images/img_alan.png" />
+                        <picture>
+                          <source srcSet="/images/img_alan.png" type="image/png" />
+                          <img
+                            src="/images/img_alan.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Alan</div>
                     </div>
@@ -225,7 +335,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-10">
                     <div className="country-tag cc-10">
                       <div className="country-icon w-embed">
-                        <img src="images/img_mooji.png" />
+                        <picture>
+                          <source srcSet="images/img_mooji.png" type="image/png" />
+                          <img
+                            src="images/img_mooji.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Mooji</div>
                     </div>
@@ -233,7 +350,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-8">
                     <div className="country-tag cc-7">
                       <div className="country-icon w-embed">
-                        <img src="images/img_jk.png" />
+                        <picture>
+                          <source srcSet="/images/img_jk.png" type="image/png" />
+                          <img
+                            src="/images/img_jk.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>JK</div>
                     </div>
@@ -241,7 +365,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-9">
                     <div className="country-tag cc-8">
                       <div className="country-icon w-embed">
-                        <img src="images/img_omswami.png" />
+                        <picture>
+                          <source srcSet="/images/img_omswami.png" type="image/png" />
+                          <img
+                            src="/images/img_omswami.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Om Swami</div>
                     </div>
@@ -249,7 +380,14 @@ export default function Home() {
                   <div className="country-tag-wrap cc-9">
                     <div className="country-tag cc-8">
                       <div className="country-icon w-embed">
-                        <img src="images/img_sistershivani.png" />
+                        <picture>
+                          <source srcSet="/images/img_sistershivani.png" type="image/png" />
+                          <img
+                            src="/images/img_sistershivani.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
                       </div>
                       <div>Sister Shivani</div>
                     </div>
@@ -269,9 +407,181 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section cc-cta-banner">
+
+      <section className="section">
         <div className="page-padding">
-          <div className="container">
+          <div className="frontcontainer">
+            <div className="section-header">
+              <h2 className="section-heading">They love it, so will you</h2>
+            </div>
+            <div className="testimonialsgrid">
+              <div className="features-grid cc-reviews">
+                <div className="review-box">
+                  <div className="stars">
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <div className='titlereview'>
+                    &quot;A spiritual space beyond the material algorithms of social media&quot;
+                  </div>
+                  <div className='namebox'>- Ethan Harper, USA</div>
+                </div>
+
+                <div className="review-box">
+                  <div className="stars">  <picture>
+                    <source srcSet="/images/img_star.webp" type="image/webp" />
+                    <img
+                      src="/images/img_star.webp"
+                      alt="Icon"
+                      className="icon-img"
+                      loading="lazy"
+                    />
+                  </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture></div>
+                  <div className='titlereview'>
+                    &quot;Not built to addict, built for seekers to awaken&quot;
+                  </div>
+                  <div className='namebox'>-Sofia Müller, Germany</div>
+                </div>
+
+                <div className="review-box">
+                  <div className="stars">  <picture>
+                    <source srcSet="/images/img_star.webp" type="image/webp" />
+                    <img
+                      src="/images/img_star.webp"
+                      alt="Icon"
+                      className="icon-img"
+                      loading="lazy"
+                    />
+                  </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture>
+                    <picture>
+                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <img
+                        src="/images/img_star.webp"
+                        alt="Icon"
+                        className="icon-img"
+                        loading="lazy"
+                      />
+                    </picture></div>
+                  <div className='titlereview'>
+                    &quot;Instagram distracted me. K4M2A gave my attention a purpose&quot;
+                  </div>
+                  <div className='namebox'>- Kai Tanaka, Japan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section cc-cta-banner paddinbottom100">
+        <div className="page-padding">
+          <div className="frontcontainer">
             <div className="cta-banner">
               <div
                 id="w-node-_88caa5af-3ca5-4396-86d8-64347c57d1b0-1ff1a765"
@@ -279,9 +589,9 @@ export default function Home() {
               >
                 <div className="cta-banner-left-content">
                   <h3 className="heading-l fnt35">
-                    Your own spiritual profile.
+                    Your spiritual profile.
                   </h3>
-                  <ul role="list" className="steps-list w-list-unstyled">
+                  <ul className="steps-list w-list-unstyled">
                     <li className="steps-list-item">
                       <div className="steps-list-step">1</div>
                       <div>Profile that reflects your spiritual journey</div>
@@ -298,7 +608,7 @@ export default function Home() {
                     </li>
                   </ul>
                   <div className="timed-tag u-rainbow">
-                    <div>Yes, we’ve aligned it perfectly.</div>
+                    <div>Yes&apos; we&apos;ve aligned it perfectly.</div>
                     <div className="svg-embed w-embed">
                       <svg
                         width="15"
@@ -321,7 +631,7 @@ export default function Home() {
                 className="cta-banner-right"
               >
                 <div>
-                  <h3 className="heading-l fnt35">One Earth, One Goal</h3>
+                  <h3 className="heading-l fnt35 whitetext">One Earth, One Goal</h3>
                   <div className="cta-banner-price">Awaken</div>
                 </div>
                 <div className="form-wrap cc-cta-banner flexcolumn">
@@ -332,26 +642,44 @@ export default function Home() {
                     What will happen to earth in next 100 years?
                   </span>
                 </div>
-                <img
-                  src="images/k4m2a-app-3.webp"
-                  loading="lazy"
-                  width="288.5"
-                  height="588.5"
-                  alt=""
-                  srcSet="
-                                        images/k4m2a-app-3.webp,
-                                        images/k4m2a-app-3.webp
-                                        "
-                  sizes="(max-width: 767px) 100vw, (max-width: 991px) 40vw, 42vw"
-                  className="cta-banner-mockup"
-                />
+
+                <picture>
+                  <source
+                    srcSet="images/footer_bottom.png"
+                    sizes="(max-width: 479px) 79vw, (max-width: 767px) 317px, 100vw"
+                    type="image/png"
+                  />
+                  <img
+                    src="images/footer_bottom.png"
+                    loading="lazy"
+                    width="317.5"
+                    height="180"
+                    alt=""
+                    className="mobile martop25"
+                    sizes="(max-width: 479px) 79vw, (max-width: 767px) 317px, 100vw"
+                  />
+                </picture>
+                <picture>
+                  <source
+                    srcSet="/images/k4m2a-app-3.webp"
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 40vw, 42vw"
+                    type="image/webp"
+                  />
+                  <img
+                    src="images/k4m2a-app-3.webp"
+                    loading="lazy"
+                    width="288.5"
+                    height="588.5"
+                    alt=""
+                    className="cta-banner-mockup"
+                    sizes="(max-width: 767px) 100vw, (max-width: 991px) 40vw, 42vw"
+                  />
+                </picture>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-     
     </>
   );
 }

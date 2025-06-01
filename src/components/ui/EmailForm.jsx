@@ -1,21 +1,24 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { API_URL } from "../../api_config";
-import { toast } from "react-toastify";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
+import { API_URL } from '../../api_config';
 
 export default function EmailForm({
-  buttonText = "Request",
-  placeholder = "Enter your e-mail",
-  notice = "Request invite to get access",
-  className = "",
-  classNameNote="textalcenter",
-  onSuccess =()=>{}
+  buttonText = 'Request',
+  placeholder = 'Enter your e-mail',
+  notice = 'Request invite to get access',
+  className = '',
+  classNameNote = 'textalcenter',
+  onSuccess = () => { },
+  isCreator = false
 }) {
   const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [error, setError] = useState("");
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errortext, setErrortext] = useState("");
 
   const isValidEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -27,12 +30,13 @@ export default function EmailForm({
 
     if (!isValidEmail(email)) {
       setError("Please enter a valid email address.");
+      setErrortext("Please enter a valid email address.");
       return;
     }
 
     setError(""); // Clear any previous error messages
     setLoading(true);
-    const request={
+    const request = {
       // "id": 0,
       "email": email,
       "name": "",
@@ -41,7 +45,7 @@ export default function EmailForm({
       "journey": "",
       "inviter": ""
     }
-    
+
     try {
       const response = await fetch(`${API_URL}/User/RequestInvite`, {
         method: "POST",
@@ -50,43 +54,47 @@ export default function EmailForm({
         },
         body: JSON.stringify(request),
       });
-      
 
       if (!response.ok) {
         throw new Error("Failed to submit. Please try again later.");
       }
 
       const data = await response.json();
-     
-     
+      console.log("API response data:", data);  // Log to inspect the data
+
       setLoading(false);
-      if(typeof data?.result === 'string' && data?.result?.toLowerCase()  == "already registered"){
-        toast.error('You are already on the waitlist.');
-      }
-      else if(data.success){
+
+      if (typeof data?.result === "string" && data?.result?.toLowerCase() === "already registered") {
+        setError(true);
+        setErrortext("You are already on the waitlist.");
+      } else if (data?.success) {  // Simplified truthy check
         setSuccess(true);
-        onSuccess()
+        onSuccess();
 
-        // toast.success('Email Sent Sucessfully!');
+        // navigate("/request-invite", { state: { email, id: data?.result?.id } });
+        // navigate.push("/request-invite", { state: { email, id: data?.result?.id } });
+        const targetRoute = isCreator ? "/request-invite-creator" : "/request-invite";
+        // navigate(targetRoute, { state: { email, id: data?.result?.id } });
 
-        // Navigate to the next page or show success message
-        navigate("/request-invite", {state:{email, id: data?.result?.id}});
+        navigate(targetRoute, {
+          state: {
+            email,
+            id: data?.result?.id,
+            successMessage: "Invitation request submitted successfully!"
+          }
+        });
 
-         //reset
-         setEmail("")
-         setSuccess(false)
-         setError("")
+
+
+        setEmail("");
+        // setSuccess(false);
+        setError("");
+      } else {
+        toast.error(data?.message || "Something went wrong. Please try again.");
       }
-      else{
-        toast.error('Something went wrong. Please try again.');
-        // setError(error.message || "Something went wrong. Please try again.");
-      }
-      
     } catch (error) {
-    
       setLoading(false);
-      toast.error('Something went wrong. Please try again.');
-      // setError(error.message || "Something went wrong. Please try again.");
+      toast.error(error.message || "Something went wrong. Please try again.");
     }
   };
 
@@ -102,7 +110,8 @@ export default function EmailForm({
           onChange={(e) => setEmail(e.target.value)}
           required
         />
-        <div className="input-bg u-rainbow u-blur-perf"></div>
+
+        <div className="input-bg u-rainbow u-blur-perf" />
         <button
           type="submit"
           className="form-submit w-button"
@@ -111,11 +120,12 @@ export default function EmailForm({
           {loading ? "Requesting..." : buttonText}
         </button>
       </form>
-      {error && <div className="error-message martop10">{error}</div>}
+      {error && <div className="error-message martop10">{errortext}</div>}
       {success && (
         <div className="success-message martop10">
           Invitation request submitted successfully!
         </div>
+
       )}
       {notice && !success && (
         <div className={`hero-notice martop10 ${classNameNote}`}>{notice}</div>
@@ -123,3 +133,15 @@ export default function EmailForm({
     </div>
   );
 }
+
+
+EmailForm.propTypes = {
+  buttonText: PropTypes.string,
+  placeholder: PropTypes.string,
+  notice: PropTypes.string,
+  className: PropTypes.string,
+  classNameNote: PropTypes.string,
+  onSuccess: PropTypes.func,
+  isCreator: PropTypes.bool,
+
+};

@@ -1,0 +1,122 @@
+ .reportbugpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;   padding-top: 10px;
+    background-color: #ffffff;
+    font-family: "segoe_ui", sans-serif !important;
+    .reportHeader{
+        margin-bottom: 50px;
+    }
+
+    .hero .eyebrow-pill {
+        animation: fadeIn .65s ease-in-out backwards;
+        animation-delay: .1s; text-align: center;
+        .eyebrow-pill-inner {
+            background-color: #f7f7f799;
+            border: 2px solid #0002;
+            border-radius: 100px;
+            padding: 13px 18px;
+            position: relative;
+            z-index: 2; display: inline-block;
+        }
+    } 
+    
+    
+    @media screen and (min-width: 1500px) {
+        .websitepage .eyebrow-pill {
+            font-size: 14px;
+        }
+    }
+    .websitepage .eyebrow-pill {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .home-hero-heading {
+        animation: fadeIn 0.65s ease-in-out backwards;
+        animation-delay: 0.15s; margin-bottom: 20px;
+    }
+    
+    @media only screen and (min-width: 1500px) {
+        .home-hero-heading {
+            font-size: 40px; font-weight: bold;
+        }
+    }
+
+    .formmainbox{
+        max-width: 90%;
+    display: block;
+    margin: 30px auto;
+    padding: 50px;
+  background: #f8f8f8;
+    border-radius: 15px; 
+    ul{
+        li{margin-bottom: 15px;
+            .form-control{
+                border:1px solid #cccccc;
+                width: 100%; border-radius: 5px; padding:5px 15px;
+                min-height: 50px;
+            }
+            textarea{
+                border:1px solid #cccccc;
+                width: 100%; border-radius: 5px; padding:5px 15px;
+                min-height:150px;
+            }
+            label{
+                display: block;
+            }
+            button{
+                background: #000000;
+                width: 100%;
+                border-radius: 5px;
+                color: #ffffff;
+                height: 50px;
+            }
+        }
+    }
+    .file-upload-label{
+        span{font-size: 18px;}
+    }
+    
+ 
+
+    }
+   
+    @media screen and (max-width: 767px) {
+        padding-top: 40px;
+        .reportHeader{
+           padding:10px 20px;
+        }
+        .report-issue-hero-img-wrap{
+            max-width:100%;
+        }
+        .subheading.maxw530{ 
+            max-width: 90%;
+        }
+        .formmainbox{
+            max-width: 100%; padding:50px 30px;
+            button{
+                background: #000000;
+                width: 100%;
+                border-radius: 5px;
+                color: #ffffff;
+                height: 50px;
+            }
+        }
+           .manifesto-header{
+            padding:0px 20px
+           }
+           .home-hero-heading{
+            font-size: 40px; font-weight: bold; margin-top: 20px;
+           }
+        }
+        
+        .custom-select .ant-select-selection-placeholder {
+            color: red !important; /* Change to any color you want */
+          }
+    
+ }

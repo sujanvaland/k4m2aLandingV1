@@ -5,17 +5,17 @@ function Terms() {
     <main className="main cc-home">
     <section className="hero">
         <div className="page-padding">
-            <div className="container container--small">
+            <div className="frontcontainer frontcontainer--small">
                 <div className="section-header cc-legal">
                     <div className="eyebrow-pill">
-                        <div className="eyebrow-pill-inner"><div>Terms</div></div>
-                        <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                        <div className="eyebrow-pill-inner">Terms</div>
+                        <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
                     </div>
                     <h1 className="section-heading cc-large">Terms of Use</h1>
                 </div>
-                <div className="legal-rt w-richtext">
+                <div className="legal-rt w-richtext termspage">
                     <p>
-                        These Terms of Use ("Terms") apply to your use of the K4M2A platform and services (referred to as "K4M2A," "we," "our," or "us"). By using K4M2A, you agree to these Terms. Please read them carefully.
+                        These Terms of Use (&quot;Terms&quot;) apply to your use of the K4M2A platform and services (referred to as &quot;K4M2A,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). By using K4M2A, you agree to these Terms. Please read them carefully.
                         ‍
                     </p>
                     <h2>1. Introduction</h2>
@@ -37,7 +37,7 @@ function Terms() {
                     <h2>3. User responsibilities</h2>
                     <p>By using K4M2A, you agree to protect your account by using a strong, unique password and ensuring it remains secure. You are responsible for maintaining the confidentiality of your account details and for all activities conducted under your account. It is essential to keep your account information accurate and up to date to ensure proper functioning of your account and our services.
                     </p>
-                    <p>You are also expected to respect others' views and contributions. K4M2A is a platform built on the principles of love, peace, and understanding, and we encourage users to foster an environment of mutual respect. Harassing, bullying, or engaging in disruptive behavior within the community is strictly prohibited and may result in the suspension or termination of your account. You are solely responsible for any content you share on the platform and any interactions you have with other users. Misuse of the platform or unauthorized access to other users’ accounts is not allowed and will result in consequences as outlined in these Terms.</p>
+                    <p>You are also expected to respect others&apos; views and contributions. K4M2A is a platform built on the principles of love, peace, and understanding, and we encourage users to foster an environment of mutual respect. Harassing, bullying, or engaging in disruptive behavior within the community is strictly prohibited and may result in the suspension or termination of your account. You are solely responsible for any content you share on the platform and any interactions you have with other users. Misuse of the platform or unauthorized access to other users’ accounts is not allowed and will result in consequences as outlined in these Terms.</p>
 
                     <h2>4. Account and service area</h2>
                     <p>To join K4M2A, you must create an account using truthful and up-to-date information. You must also be at least 18 years of age or have parental consent if you are under 18. It is your responsibility to ensure that the information on your account remain up to date, and you are expected to update it as needed.</p>

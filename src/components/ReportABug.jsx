@@ -1,7 +1,6 @@
-import React from "react";
-import { useState } from "react";
-import { API_URL } from "../api_config";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import "./styles/reportbug.css";  
+
 
 export default function BugReportForm() {
   const [formData, setFormData] = useState({
@@ -211,21 +210,21 @@ export default function BugReportForm() {
 
   if (success) {
     return (
-      <main className="main cc-home">
+      <main className="main cc-home ">
         <div
           data-w-id="077155df-02cf-ce52-d236-39089a93392f"
           className="manifesto-hero-trigger"
-        ></div>
+         />
         <header className="hero cc-manifesto">
           <div className="page-padding">
-            <div className="container">
+            <div className="frontcontainer">
               <div className="manifesto-header">
-                <img src="images/img_thankyou.png" />
+                <img src="images/img_thankyou.png" alt="logo" />
                 <div className="eyebrow-pill">
                   <div className="greenbox">
                     <div>Thank You</div>
                   </div>
-                  <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                  <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
                 </div>
 
                 {/* <button >{UserFullName}</button> */}
@@ -233,7 +232,7 @@ export default function BugReportForm() {
                 <p className="subheading maxw530 marbtm20">
                   Did you know that 85% of people believe they have the power to
                   make the world a better place, yet only 5% consistently take
-                  concrete action toward that goal? You've already taken the
+                  concrete action toward that goal? You&apos;ve already taken the
                   crucial first step, and we want to celebrate that.{" "}
                 </p>
                 <p className="subheading maxw530">
@@ -255,16 +254,25 @@ export default function BugReportForm() {
   }
 
   return (
-    <main className="main cc-home">
+    <main className="reportbugpage">
       <header className="hero cc-manifesto">
         <div className="page-padding">
-          <div className="container">
+          <div className="frontcontainer">
+            <div className="reportHeader">
+            <img
+                src="images/logo.png"
+                loading="eager"
+                width="120px"
+                alt=""
+                className="u-auto-img"
+              />
+            </div>
             <div className="manifesto-header">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
                   <div>Help Us Improve</div>
                 </div>
-                <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
               <h1 className="home-hero-heading">Report a Bug</h1>
               <p className="subheading maxw530">
@@ -329,7 +337,7 @@ export default function BugReportForm() {
                     placeholder="Bug Description"
                     value={formData.description}
                     onChange={handleChange}
-                  ></textarea>
+                 />
                   {errors.description && (
                     <p className="error-text">{errors.description}</p>
                   )}
@@ -348,6 +356,7 @@ export default function BugReportForm() {
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
                     <option value="High">High</option>
+                    <option value="Delete Account">Delete Account</option>
                   </select>
                   {errors.priority && (
                     <p className="error-text">{errors.priority}</p>
@@ -365,7 +374,7 @@ export default function BugReportForm() {
                   ></textarea>
                 </li> */}
 
-                <li className="file-upload-container">
+                <li className="file-upload-frontcontainer">
                   <label htmlFor="file-upload" className="file-upload-label">
                     <span>Upload Files (Screenshots, Logs)</span>
                   </label>
@@ -408,10 +417,10 @@ export default function BugReportForm() {
             </form>
           </div>
           <div className="hero-cloud-1">
-            <div className="cloud-img cc-1"></div>
+            <div className="cloud-img cc-1" />
           </div>
           <div className="hero-cloud-2">
-            <div className="cloud-img cc-2"></div>
+            <div className="cloud-img cc-2" />
           </div>
         </div>
       </header>

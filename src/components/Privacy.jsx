@@ -5,17 +5,17 @@ function Privacy() {
     <main className="main cc-home">
       <section className="hero">
         <div className="page-padding">
-          <div className="container container--small">
+          <div className="frontcontainer frontcontainer--small">
             <div className="section-header cc-legal">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
                   <div>Policy</div>
                 </div>
-                <div className="eyebrow-pill-bg u-rainbow u-blur-perf"></div>
+                <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
               <h1 className="section-heading cc-large">Privacy Policy</h1>
             </div>
-            <div className="legal-rt w-richtext">
+            <div className="legal-rt w-richtext termspage">
               <p>
                 At K4M2A, your privacy is our priority. This Privacy Policy
                 outlines how we collect, use, share, and protect your personal
