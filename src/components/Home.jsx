@@ -9,7 +9,7 @@ export default function Home() {
         <div className="page-padding">
           <div className="frontcontainer">
             <div className="home-hero-header">
-              <EyebrowPill text="Heyo! We launched our Alpha!" link="#" />
+              <EyebrowPill text="Heyo! Only for Humans!" link="#" />
               <h1 className="home-hero-heading">
                 World&apos;s First Spiritual Network
               </h1>
@@ -336,15 +336,15 @@ export default function Home() {
                     <div className="country-tag cc-10">
                       <div className="country-icon w-embed">
                         <picture>
-                          <source srcSet="images/img_mooji.png" type="image/png" />
+                          <source srcSet="images/a_nagraj.png" type="image/png" />
                           <img
-                            src="images/img_mooji.png"
+                            src="images/a_nagraj.png"
                             alt=""
                             loading="lazy"
                           />
                         </picture>
                       </div>
-                      <div>Mooji</div>
+                      <div>A. Nagraj</div>
                     </div>
                   </div>
                   <div className="country-tag-wrap cc-8">

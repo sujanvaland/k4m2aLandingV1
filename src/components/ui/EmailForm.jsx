@@ -118,6 +118,11 @@ export default function EmailForm({
           disabled={loading}
         >
           {loading ? "Requesting..." : buttonText}
+          <img
+            src="/images/apple-logo.png" // Fallback image in JPEG/PNG
+            alt="K4M2A Portal"
+            className="home-hero-portal"
+          />
         </button>
       </form>
       {error && <div className="error-message martop10">{errortext}</div>}

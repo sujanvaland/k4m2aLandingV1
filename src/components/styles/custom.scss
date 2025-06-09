@@ -2445,8 +2445,8 @@ body {
         margin-bottom: 32px;
         font-family: "Noto Serif", serif !important;
         font-size: 84px;
+        line-height: 90px;
         font-weight: 400;
-        line-height: 1.5;
 
         span {
             font-family: "Noto Serif", serif !important;
@@ -3495,6 +3495,14 @@ body {
         position: absolute;
         inset: -8% auto 0% -10.5%;
         transform: rotate(8deg);
+
+        @media screen and (max-width:1200px) {
+            max-width: 215px;
+        }
+
+        @media screen and (max-width:999px) {
+            max-width: 215px;
+        }
     }
 
     .timed-tag {
@@ -4204,9 +4212,7 @@ body {
             display: none;
         }
 
-        .mobile {
-            display: block;
-        }
+
 
         .footer-logo {
             margin-bottom: 20px;
@@ -4224,6 +4230,7 @@ body {
             margin-bottom: 32px;
             font-size: 72px;
             max-width: 95%;
+            line-height: 80px;
             min-height: 50px;
         }
 
@@ -4376,7 +4383,7 @@ body {
         }
 
         .cta-banner-mockup {
-            max-width: 30%;
+            max-width: 26%;
             inset: -41.4vw 13% auto auto
         }
 
@@ -4469,6 +4476,9 @@ body {
 
     @media screen and (max-width:767px) {
 
+        .mobile {
+            display: block;
+        }
 
         .open .hamburger_1_line:first-child {
             transform: translateY(4px) rotate(45deg);
@@ -4588,7 +4598,8 @@ body {
         }
 
         .home-hero-heading {
-            font-size: 62px
+            font-size: 62px;
+            line-height: 70px;
         }
 
         .subheading {
@@ -5094,7 +5105,8 @@ body {
 
         .home-hero-heading {
             margin-bottom: 22px;
-            font-size: 36px
+            font-size: 36px;
+            line-height: 40px;
         }
 
         .eyebrow-pill {
@@ -6870,6 +6882,7 @@ body {
             margin-bottom: 32px;
             font-family: "Noto Serif", serif !important;
             font-size: 92px;
+            line-height: 100px;
             font-weight: 400;
             line-height: 1;
 
@@ -8035,7 +8048,27 @@ ol.framer-text {
     margin-bottom: 50px !important;
 }
 
+.PhoneInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 
+    .PhoneInputCountry {
+        position: relative;
+
+        select {
+            width: 42px;
+            border: 0px;
+        }
+
+        .PhoneInputCountryIcon {
+            width: 25px;
+            position: absolute;
+            top: 11px;
+        }
+    }
+}
 
 @media screen and (max-width:767px) {
     .deviceProfile {

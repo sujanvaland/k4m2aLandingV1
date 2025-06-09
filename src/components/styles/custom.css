@@ -2151,8 +2151,8 @@ body {
   margin-bottom: 32px;
   font-family: "Noto Serif", serif !important;
   font-size: 84px;
+  line-height: 90px;
   font-weight: 400;
-  line-height: 1.5;
 }
 .websitepage .home-hero-heading span {
   font-family: "Noto Serif", serif !important;
@@ -3203,6 +3203,16 @@ body {
   -webkit-transform: rotate(8deg);
           transform: rotate(8deg);
 }
+@media screen and (max-width: 1200px) {
+  .websitepage .cta-banner-mockup {
+    max-width: 215px;
+  }
+}
+@media screen and (max-width: 999px) {
+  .websitepage .cta-banner-mockup {
+    max-width: 215px;
+  }
+}
 .websitepage .timed-tag {
   grid-column-gap: 4px;
   grid-row-gap: 4px;
@@ -3994,9 +4004,6 @@ body {
   .websitepage .desktop {
     display: none;
   }
-  .websitepage .mobile {
-    display: block;
-  }
   .websitepage .footer-logo {
     margin-bottom: 20px;
   }
@@ -4010,6 +4017,7 @@ body {
     margin-bottom: 32px;
     font-size: 72px;
     max-width: 95%;
+    line-height: 80px;
     min-height: 50px;
   }
   .websitepage .subheading.cc-features {
@@ -4147,7 +4155,7 @@ body {
     font-size: 64px;
   }
   .websitepage .cta-banner-mockup {
-    max-width: 30%;
+    max-width: 26%;
     inset: -41.4vw 13% auto auto;
   }
   .websitepage .cta-banner-mockup.cc-modal {
@@ -4238,6 +4246,9 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  .websitepage .mobile {
+    display: block;
+  }
   .websitepage .open .hamburger_1_line:first-child {
     -webkit-transform: translateY(4px) rotate(45deg);
             transform: translateY(4px) rotate(45deg);
@@ -4333,6 +4344,7 @@ body {
   }
   .websitepage .home-hero-heading {
     font-size: 62px;
+    line-height: 70px;
   }
   .websitepage .subheading {
     font-size: 18px;
@@ -4868,6 +4880,7 @@ body {
   .websitepage .home-hero-heading {
     margin-bottom: 22px;
     font-size: 36px;
+    line-height: 40px;
   }
   .websitepage .eyebrow-pill {
     margin-bottom: 20px;
@@ -6530,6 +6543,7 @@ body {
     margin-bottom: 32px;
     font-family: "Noto Serif", serif !important;
     font-size: 92px;
+    line-height: 100px;
     font-weight: 400;
     line-height: 1;
   }
@@ -7758,6 +7772,34 @@ ol.framer-text li {
 
 .mb50 {
   margin-bottom: 50px !important;
+}
+
+.PhoneInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.PhoneInput .PhoneInputCountry {
+  position: relative;
+}
+.PhoneInput .PhoneInputCountry select {
+  width: 42px;
+  border: 0px;
+}
+.PhoneInput .PhoneInputCountry .PhoneInputCountryIcon {
+  width: 25px;
+  position: absolute;
+  top: 11px;
 }
 
 @media screen and (max-width: 767px) {
