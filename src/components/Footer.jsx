@@ -167,7 +167,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="footerbottomlogo desktop">
+          <div className="footerbottomlogo">
             <Link
               onClick={(e) => handleClick(e, "/")}
               to="/"

@@ -2569,6 +2569,25 @@ body {
   inset: 10px 10px 10px auto;
   line-height: 18px;
 }
+.websitepage .form-submit.applebutton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.websitepage .form-submit.applebutton img {
+  width: 21px;
+  margin-left: 10px;
+}
 .websitepage .form-submit:hover {
   background-color: #1a1919;
 }
@@ -2820,6 +2839,9 @@ body {
   background: #ffffff;
   padding: 10px;
   border-radius: 20px;
+}
+.websitepage .features-visual .sp_imagebox img {
+  border-radius: 15px;
 }
 .websitepage .features-visual .sp_imagebox h4 {
   font-size: 20px;
@@ -4000,7 +4022,136 @@ body {
 .websitepage .wd100 {
   width: 100%;
 }
+.websitepage .downloadapppage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 600px;
+}
+.websitepage .downloadapppage .leftdownload {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+.websitepage .downloadapppage .leftdownload h1 {
+  font-size: 70px;
+}
+.websitepage .downloadapppage .rightdownload {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+}
+.websitepage .downloadapppage .qrcodebox {
+  width: 400px;
+  min-height: 160px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 1px solid #dddddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 15px;
+}
+.websitepage .downloadapppage .qrcodebox img {
+  border-radius: 10px;
+  width: 130px;
+}
+.websitepage .downloadapppage .appmainbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 400px;
+}
+.websitepage .downloadapppage .appmainbox .appbox {
+  width: 48.5%;
+  position: relative;
+  min-height: 160px;
+  background: #ffffff url(/public/images/right-up.png) no-repeat right top;
+  border-radius: 15px;
+  margin-top: 14px;
+  border: 1px solid #dddddd;
+  background-size: 20px;
+  background-position: right 10px top 10px;
+}
+.websitepage .downloadapppage .appmainbox .appbox a {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 160px;
+}
+.websitepage .downloadapppage .appmainbox .appbox a span {
+  color: #000000;
+  font-size: 15px;
+}
+.websitepage .downloadapppage .appmainbox .appbox img {
+  width: 35px;
+}
+@media screen and (max-width: 1100px) {
+  .websitepage .downloadapppage .leftdownload h1 {
+    line-height: 70px;
+  }
+}
 @media screen and (max-width: 991px) {
+  .websitepage .dwnpage {
+    margin-top: 0px !important;
+  }
+  .websitepage .downloadapppage .leftdownload {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .websitepage .downloadapppage .leftdownload h1 {
+    line-height: 70px;
+  }
+  .websitepage .downloadapppage .rightdownload {
+    display: none;
+  }
   .websitepage .desktop {
     display: none;
   }
@@ -4432,7 +4583,7 @@ body {
   .websitepage .homepage h3 {
     font-weight: bold;
     font-size: 15px;
-    font-size: 28px !important;
+    font-size: 23px !important;
   }
   .websitepage .homepage h3 span {
     font-weight: 500;
@@ -4778,6 +4929,12 @@ body {
   .websitepage .hero-notice.martop10.textleft.marleft10.phonetextright {
     text-align: center !important;
   }
+  .websitepage .hero-notice.martop10.textalcenter {
+    margin-top: 25px !important;
+  }
+  .websitepage .emailform .input {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 479px) {
   .websitepage {
@@ -4878,7 +5035,7 @@ body {
     margin-bottom: 48px;
   }
   .websitepage .home-hero-heading {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     font-size: 36px;
     line-height: 40px;
   }
@@ -4921,13 +5078,33 @@ body {
     min-width: 0;
     min-height: 50px;
     padding-left: 20px;
-    padding-right: 117px;
+    padding-right: 20px;
+  }
+  .websitepage .emailform .input {
+    text-align: center;
   }
   .websitepage .form-submit {
-    font-size: 14px;
-    top: 4px;
-    bottom: 4px;
-    right: 5px;
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 10px;
+  }
+  .websitepage .form-submit.applebutton {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .websitepage .hero-highlights-wrap {
     grid-column-gap: 24px;
@@ -5131,6 +5308,14 @@ body {
   }
   .websitepage .legal-rt {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .websitepage .downloadapppage .qrcodebox {
+    width: 100%;
+  }
+  .websitepage .appmainbox {
+    max-width: 360px;
   }
 }
 .websitepage #w-node-_72a88ba6-f63e-ddcc-c91e-4b1bac4187b0-1ff1a765 {
@@ -7792,9 +7977,13 @@ ol.framer-text li {
 .PhoneInput .PhoneInputCountry {
   position: relative;
 }
+.PhoneInput .PhoneInputCountry input {
+  max-width: 181px;
+}
 .PhoneInput .PhoneInputCountry select {
   width: 42px;
   border: 0px;
+  background: #ffffff;
 }
 .PhoneInput .PhoneInputCountry .PhoneInputCountryIcon {
   width: 25px;
@@ -7817,5 +8006,8 @@ ol.framer-text li {
   }
   .profileHeader a.logo img {
     width: 90px;
+  }
+  .PhoneInputInput {
+    width: 160px;
   }
 }/*# sourceMappingURL=custom.css.map */

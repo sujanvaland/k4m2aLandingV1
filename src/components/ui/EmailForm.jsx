@@ -4,10 +4,16 @@ import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { API_URL } from '../../api_config';
 
+const isAndroid = /Android/i.test(navigator.userAgent);
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+
 export default function EmailForm({
-  buttonText = 'Request',
-  placeholder = 'Enter your e-mail',
-  notice = 'Request invite to get access',
+  buttonText = 'Download App',
+  placeholder = "What's your email?",
+  notice = 'Enter your email to download for both iOS and Android',
+  noticeandroid = 'Enter your email to download for Android app',
+  noticeios = 'Enter your email to download for iOS app',
   className = '',
   classNameNote = 'textalcenter',
   onSuccess = () => { },
@@ -73,17 +79,32 @@ export default function EmailForm({
 
         // navigate("/request-invite", { state: { email, id: data?.result?.id } });
         // navigate.push("/request-invite", { state: { email, id: data?.result?.id } });
-        const targetRoute = isCreator ? "/request-invite-creator" : "/request-invite";
+        const targetRoute = "/downloadapp";
         // navigate(targetRoute, { state: { email, id: data?.result?.id } });
+        // {
+        //       isIOS &&
 
-        navigate(targetRoute, {
-          state: {
-            email,
-            id: data?.result?.id,
-            successMessage: "Invitation request submitted successfully!"
-          }
-        });
+        // }
 
+        // navigate(targetRoute, {
+        //   state: {
+        //     email,
+        //     id: data?.result?.id,
+        //     successMessage: "Invitation request submitted successfully!"
+        //   }
+        // });
+
+
+
+        // Redirect based on device
+        if (isAndroid) {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN";
+        } else if (isIOS) {
+          window.location.href = "https://apps.apple.com/in/app/k4m2a/id6743112577";
+        } else {
+          // If not mobile, navigate internally
+          navigate(targetRoute);
+        }
 
 
         setEmail("");
@@ -100,7 +121,7 @@ export default function EmailForm({
 
   return (
     <div className={`form-wrap ${className}`}>
-      <form onSubmit={handleSubmit} className="input-wrap">
+      <form onSubmit={handleSubmit} className="input-wrap emailform">
         <input
           type="email"
           maxLength={320}
@@ -114,26 +135,45 @@ export default function EmailForm({
         <div className="input-bg u-rainbow u-blur-perf" />
         <button
           type="submit"
-          className="form-submit w-button"
+          className="form-submit w-button applebutton"
           disabled={loading}
         >
-          {loading ? "Requesting..." : buttonText}
-          <img
-            src="/images/apple-logo.png" // Fallback image in JPEG/PNG
-            alt="K4M2A Portal"
-            className="home-hero-portal"
-          />
+          {loading ? "Downloading..." : buttonText}
+
+          {
+            isIOS &&
+            <img
+              src="/images/apple-logo.png" // Fallback image in JPEG/PNG
+              alt="K4M2A Portal"
+              className="home-hero-portal"
+            />
+          }
+          {
+            isAndroid &&
+            <img
+              src="/images/android_logo.png" // Fallback image in JPEG/PNG
+              alt="K4M2A Portal"
+              className="home-hero-portal"
+            />
+          }
         </button>
       </form>
       {error && <div className="error-message martop10">{errortext}</div>}
-      {success && (
+      {/* {success && (
         <div className="success-message martop10">
           Invitation request submitted successfully!
         </div>
 
-      )}
+      )} */}
       {notice && !success && (
-        <div className={`hero-notice martop10 ${classNameNote}`}>{notice}</div>
+
+        <div className={`hero-notice martop10 ${classNameNote}`}>
+          {isAndroid && noticeandroid}
+          {isIOS && noticeios}
+          {!isAndroid && !isIOS && notice}
+
+
+        </div>
       )}
     </div>
   );

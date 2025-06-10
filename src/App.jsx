@@ -37,6 +37,8 @@ const Pricing = lazyLoad(() => import("./components/Pricing"));
 const Support = lazyLoad(() => import("./components/Support"));
 const Profile = lazyLoad(() => import("./components/Profile"));
 const Post = lazyLoad(() => import("./components/Post"));
+const Downloadapp = lazyLoad(() => import("./components/Downloadapp"));
+const Qrpage = lazyLoad(() => import("./components/Qrpage"));
 
 // Prefetch routes on hover
 const prefetchRoute = (route) => {
@@ -102,6 +104,14 @@ function App() {
             element={
               <Layout>
                 <Privacy />
+              </Layout>
+            }
+          />
+          <Route
+            path="/qrpage"
+            element={
+              <Layout>
+                <Qrpage />
               </Layout>
             }
           />
@@ -210,6 +220,14 @@ function App() {
             element={
               <Layout>
                 <ContactUs />
+              </Layout>
+            }
+          />
+          <Route
+            path="/Downloadapp"
+            element={
+              <Layout>
+                <Downloadapp />
               </Layout>
             }
           />

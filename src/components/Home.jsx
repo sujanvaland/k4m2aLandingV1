@@ -15,8 +15,7 @@ export default function Home() {
               </h1>
               <div className="home-hero-subheading">
                 <p className="subheading">
-                  Connect&apos; learn&apos; and share your experiences with spiritual
-                  seekers from around the world.
+                  with a mission to enlighten humanity
                 </p>
               </div>
 
@@ -112,7 +111,7 @@ export default function Home() {
                   </div>
                   <div className="icon-bg u-rainbow u-blur-perf" />
                 </div>
-                <h3 className="heading-m">Dwell on the topics that resonate</h3>
+                <h3 className="heading-m">Connect with seekers</h3>
               </div>
               <div className="hero-highlight-cell">
                 <div className="icon-wrap">
@@ -134,7 +133,7 @@ export default function Home() {
                   </div>
                   <div className="icon-bg u-rainbow u-blur-perf" />
                 </div>
-                <h3 className="heading-m">Escape material algorithms</h3>
+                <h3 className="heading-m">Create spiritual profile</h3>
               </div>
             </div>
           </div>
@@ -145,9 +144,9 @@ export default function Home() {
         <div className="page-padding">
           <div className="frontcontainer">
             <div className="section-header">
-              <h2 className="section-heading">Spiritual Exploration</h2>
+              <h2 className="section-heading">Why Network for Spirituality?</h2>
               <p className="subheading maxw530">
-                Discover&apos; explore and experience every aspect of spirituality in one place.
+                Because connecting for conversation is the basis of humanness
               </p>
             </div>
             <div className="features-grid">
@@ -158,22 +157,22 @@ export default function Home() {
                 <div className="features-visual">
                   <div className="sp_imagebox">
                     <picture>
-                      <source srcSet="/images/image1.svg" media="(max-width: 767px)" />
-                      <source srcSet="/images/image1.svg" media="(min-width: 768px)" />
+                      <source srcSet="/images/img_questions.jpg" media="(max-width: 767px)" />
+                      <source srcSet="/images/img_questions.jpg" media="(min-width: 768px)" />
                       <img
-                        src="/images/image1.svg"
+                        src="/images/img_questions.jpg"
                         alt=""
                         className="responsive-image"
                         loading="lazy"
                       />
                     </picture>
-                    <h4>10K+</h4>
+                    <h4>Share</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Philosophies</h3>
+                  <h3 className="heading-m u-mb-m"> Experiences</h3>
                   <p className="subheading cc-features maxw200">
-                    Spanning over 2&apos;000 years of earth
+                    To help others grow through your learnings.
                   </p>
                 </div>
               </div>
@@ -184,22 +183,22 @@ export default function Home() {
                 <div className="features-visual">
                   <div className="sp_imagebox">
                     <picture>
-                      <source srcSet="/images/image2.svg" media="(max-width: 767px)" />
-                      <source srcSet="/images/image2.svg" media="(min-width: 768px)" />
+                      <source srcSet="/images/img_Philosophies.jpg" media="(max-width: 767px)" />
+                      <source srcSet="/images/img_Philosophies.jpg" media="(min-width: 768px)" />
                       <img
-                        src="/images/image2.svg"
+                        src="/images/img_Philosophies.jpg"
                         alt=""
                         className="responsive-image"
                         loading="lazy"
                       />
                     </picture>
-                    <h4>48K+</h4>
+                    <h4>Ask</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Guru&apos;s</h3>
+                  <h3 className="heading-m u-mb-m">Questions</h3>
                   <p className="subheading cc-features maxw220">
-                    Spanning over 5&apos;000 years of earth
+                    You're struggling to understand.
                   </p>
                 </div>
               </div>
@@ -210,22 +209,22 @@ export default function Home() {
                 <div className="features-visual">
                   <div className="sp_imagebox">
                     <picture>
-                      <source srcSet="/images/image3.svg" media="(max-width: 767px)" />
-                      <source srcSet="/images/image3.svg" media="(min-width: 768px)" />
+                      <source srcSet="/images/img_gurus.jpg" media="(max-width: 767px)" />
+                      <source srcSet="/images/img_gurus.jpg" media="(min-width: 768px)" />
                       <img
-                        src="/images/image3.svg"
+                        src="/images/img_gurus.jpg"
                         alt=""
                         className="responsive-image"
                         loading="lazy"
                       />
                     </picture>
-                    <h4>1B</h4>
+                    <h4>Conduct</h4>
                   </div>
                 </div>
                 <div className="features-card-content">
-                  <h3 className="heading-m u-mb-m"><span>Spiritual</span> Questions</h3>
+                  <h3 className="heading-m u-mb-m">Experiments</h3>
                   <p className="subheading cc-features maxw220">
-                    Spanning over 100&apos;000 years of earth
+                    Publish your learnings on new ways of being.
                   </p>
                 </div>
               </div>
@@ -239,16 +238,15 @@ export default function Home() {
             <div className="section-header cc-coverage">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
-                  <div>Wisdom Without Borders</div>
+                  <div>Humans Often Inquire</div>
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
               <h2 className="section-heading">
-                Who&apos;s on the platform? Glad you asked.
+                What is Spirituality?
               </h2>
               <p className="subheading maxw530">
-                Experience exclusive content from spiritual leaders and teachers
-                from across 150 countries.
+                Spirituality for us is the study of enlightened humans to find answers to the fundamental questions of life.
               </p>
             </div>
             <div className="coverage">
