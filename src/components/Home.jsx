@@ -410,50 +410,14 @@ export default function Home() {
         <div className="page-padding">
           <div className="frontcontainer">
             <div className="section-header">
-              <h2 className="section-heading">They love it, so will you</h2>
+              <h2 className="section-heading">No barriers  of language, culture, or philosophy.</h2>
             </div>
             <div className="testimonialsgrid">
               <div className="features-grid cc-reviews">
                 <div className="review-box">
                   <div className="stars">
                     <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
+                      <source srcSet="/images/img_5star.png" type="image/png" />
                       <img
                         src="/images/img_star.webp"
                         alt="Icon"
@@ -463,111 +427,41 @@ export default function Home() {
                     </picture>
                   </div>
                   <div className='titlereview'>
-                    &quot;A spiritual space beyond the material algorithms of social media&quot;
+                    &quot;I am here because people don't judge me, allowing me to share my deep spiritual experience&quot;
                   </div>
                   <div className='namebox'>- Ethan Harper, USA</div>
                 </div>
 
                 <div className="review-box">
                   <div className="stars">  <picture>
-                    <source srcSet="/images/img_star.webp" type="image/webp" />
+                    <source srcSet="/images/img_5star.png" type="image/png" />
                     <img
                       src="/images/img_star.webp"
                       alt="Icon"
                       className="icon-img"
                       loading="lazy"
                     />
-                  </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture></div>
+                  </picture></div>
                   <div className='titlereview'>
-                    &quot;Not built to addict, built for seekers to awaken&quot;
+                    &quot;I don't understand meaning behind the
+                    name K4M2A, but I love the mission to
+                    enlighten humanity&quot;
                   </div>
                   <div className='namebox'>-Sofia Müller, Germany</div>
                 </div>
 
                 <div className="review-box">
                   <div className="stars">  <picture>
-                    <source srcSet="/images/img_star.webp" type="image/webp" />
+                    <source srcSet="/images/img_5star.png" type="image/png" />
                     <img
                       src="/images/img_star.webp"
                       alt="Icon"
                       className="icon-img"
                       loading="lazy"
                     />
-                  </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture>
-                    <picture>
-                      <source srcSet="/images/img_star.webp" type="image/webp" />
-                      <img
-                        src="/images/img_star.webp"
-                        alt="Icon"
-                        className="icon-img"
-                        loading="lazy"
-                      />
-                    </picture></div>
+                  </picture></div>
                   <div className='titlereview'>
-                    &quot;Instagram distracted me. K4M2A gave my attention a purpose&quot;
+                    &quot;I don't like how it looks, but I like how it feels. I love how people here are trying to build features for spiritual seekers&quot;
                   </div>
                   <div className='namebox'>- Kai Tanaka, Japan</div>
                 </div>

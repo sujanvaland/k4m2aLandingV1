@@ -8010,4 +8010,23 @@ ol.framer-text li {
   .PhoneInputInput {
     width: 160px;
   }
+}
+.marbtm20 {
+  margin-bottom: 10px;
+}
+
+.martop20 {
+  margin-top: 40px !important;
+}
+
+.martop10 {
+  margin-top: 10px !important;
+}
+
+.termspage a {
+  font-size: 16px;
+}
+
+ul li {
+  list-style-type: none;
 }/*# sourceMappingURL=custom.css.map */

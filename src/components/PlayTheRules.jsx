@@ -1,8 +1,9 @@
 import React from "react";
+import Link from "antd/lib/typography/Link";
 
 function PlayTheRules() {
   return (
-    <main className="main cc-home">
+    <main className="main cc-home termspage securitypage">
       <section className="hero">
         <div className="page-padding">
           <div className="frontcontainer frontcontainer--small">
@@ -13,90 +14,47 @@ function PlayTheRules() {
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
-              <h1 className="section-heading cc-large">Play by the Rules</h1>
+              <h1 className="section-heading cc-large">Guidelines / Play by the Rules</h1>
             </div>
             <div className="legal-rt w-richtext termspage">
-              <p>
-                At <strong>K4M2A</strong>, our goal is to create a space where
-                spiritual exploration, growth, and connection flourish. To
-                maintain a positive, supportive environment for everyone, we ask
-                that all users follow these simple guidelines. By doing so, you
-                help keep K4M2A a place where all members can grow, learn, and
-                share their spiritual journeys.
-              </p>
+              <p> At <strong>K4M2A</strong>, we’re building more than a digital product — we’re shaping a conscious <strong>spiritual platform</strong>  for those who seek growth, meaning, and true connection. To ensure our <strong>spiritual community</strong> stays safe, supportive, and inspiring, we ask every member to follow these simple but powerful guidelines.</p>
+              <p className='martop10'> Together, we can make K4M2A a place where <strong>spirituality</strong> thrives. </p>
+
+
+
               <h2>1. Be Free</h2>
-              <p>
-                K4M2A is your space to explore, learn, and share freely. Use the
-                platform to express your spiritual beliefs, engage with
-                like-minded individuals, and fuel your curiosity. Embrace new
-                experiences and share your personal growth in a way that adds to
-                the community&apos;s collective wisdom.
-                <br />
+              <p> K4M2A is your sacred digital space  — a place to explore, express, and grow freely. Share your thoughts, beliefs, and discoveries related to <strong>spiritual gifts</strong>, practices, and insights. Whether you're new to your <strong>spiritual awakening</strong> or deep in your journey, you’re welcome here.</p>
+              <p className='martop10'>Contribute in ways that honor your voice and elevate the collective spirit of this spiritual community.
               </p>
               <h2>2. Keep It Balanced</h2>
-              <p>
-                While we encourage active participation, please be mindful of
-                your usage. Overposting or dominating conversations can affect
-                others’ ability to engage meaningfully. K4M2A thrives when
-                everyone has a chance to contribute and share, so let’s work
-                together to keep the space balanced and accessible for all
-                members.
+              <p> Participation is encouraged — but with mindfulness.  Refrain from overposting or dominating conversations. A thriving <strong>spiritual platform</strong> flourishes when every voice has space to be heard.</p>
+              <p className='martop10'>Let’s co-create a balanced, accessible experience where energy flows with clarity and purpose.
               </p>
-
               <h2>3. Share with Purpose</h2>
-              <p>
-                K4M2A is designed for spiritual connection and personal
-                exploration. Share your insights, experiences, and wisdom with
-                the community, but refrain from using the platform for
-                advertising, sales, or self-promotion. Our community thrives
-                when the focus remains on mutual growth and respect, not on
-                business interests.
+              <p> K4M2A exists to support genuine connection and <strong>spiritual exploration</strong>. Share stories, teachings, or reflections that uplift, educate, or inspire. Avoid promotional content, sales pitches, or any form of self-advertising.</p>
+              <p className='martop10'>This is a space built on intention, not commerce.
               </p>
-
               <h2>4. Just for You</h2>
               <p>
-                Your K4M2A account is for personal spiritual use only. We ask
-                that you respect the platform&apos;s focus on individual journeys and
-                experiences. Keep your account personal and authentic, and avoid
-                using it to promote external products or services.
+                In a <b>spiritual community</b>, truth matters. Please speak from the heart, be clear, and stay genuine in your interactions. Honesty builds trust. Trust builds connection. And connection builds a space where <b>spirituality</b> can flourish.
               </p>
               <h2>5. Honesty and Integrity</h2>
-              <p>
-                At K4M2A, honesty and authenticity are fundamental to building a
-                trusting and supportive community. When sharing your thoughts or
-                engaging with others, be sincere and transparent. By fostering
-                an environment of integrity, we create a space where spiritual
-                growth is supported and trusted by all members.
-              </p>
+              <p>In a <strong>spiritual community</strong>, truth matters. Please speak from the heart, be clear, and stay genuine in your interactions. Honesty builds trust. Trust builds connection. And connection builds a space where <strong>spirituality</strong> can flourish.</p>
 
               <h2>6. Keep It Uplifting</h2>
               <p>
-                Our community is grounded in positivity, support, and respect.
-                Please use K4M2A to share wisdom that uplifts others, avoids
-                negative behavior, and nurtures the spiritual journey of all
-                members. Discrimination, hate speech, and harmful behavior have
-                no place in this space, let&apos;s keep the energy positive and
-                inspiring.
+                Our platform is rooted in empathy, wisdom, and shared learning. Use K4M2A to encourage others. Lift one another up. Share practices or <b>spiritual gifts</b> that help people grow. We do not allow hate speech, divisive talk, or anything that harms the emotional or energetic safety of our members.
               </p>
-              <h2>7. Respect Your Space and Others</h2>
-              <p>
-                K4M2A is a personal and sacred space for everyone. Please
-                respect the privacy of others by not misusing their content.
-                Engage with others&apos; posts with kindness and respect, always
-                remembering that spiritual journeys are unique and should be
-                honored.‍
-              </p>
+              <p className='martop10'>Positivity is power. Let’s keep the vibration high.</p>
 
-              <p>
-                <h2> Thank you for Playing by the Rules!</h2>
+              <h2>7. Respect Your Space and Others</h2>
+              <p>K4M2A is a sacred space for many. Respect the stories, content, and energy that others bring. Every <strong>spiritual awakening</strong> is different. Each person’s truth is worthy of honor.</p>
+
+              <p>Thank you for being part of K4M2A. Let’s keep growing, connecting, and co-creating together — one conscious interaction at a time.</p>
+              <p className='martop10'><strong>Thank You for Playing by the Rules </strong></p>
+              <p className='martop10'>By honoring these guidelines, you're helping shape a safe and vibrant <strong>spiritual platform</strong> — one rooted in trust, intention, and shared evolution.
               </p>
-              <p>
-                By following these guidelines, you&apos;re helping to create a
-                supportive, fair, and enriching community for everyone on K4M2A.
-                We appreciate your contributions and look forward to continuing
-                this collective spiritual journey together. Let’s keep the
-                platform a place of respect, growth, and connection for all.‍
-              </p>
+              <p className='martop10'>Thank you for being part of <strong>K4M2A</strong>. Let’s keep growing, connecting, and co-creating together — one conscious interaction at a time.</p>
             </div>
           </div>
         </div>

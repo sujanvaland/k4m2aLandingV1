@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 .reportbugpage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +15,7 @@
           justify-content: flex-start;
   padding-top: 10px;
   background-color: #ffffff;
-  font-family: "segoe_ui", sans-serif !important;
+  font-family: "Inter", serif !important;
 }
 .reportbugpage .reportHeader {
   margin-bottom: 50px;
@@ -68,22 +69,33 @@
   background: #f8f8f8;
   border-radius: 15px;
 }
+.reportbugpage .formmainbox ul {
+  margin-left: 0px;
+  padding-left: 0px;
+}
 .reportbugpage .formmainbox ul li {
   margin-bottom: 15px;
 }
 .reportbugpage .formmainbox ul li .form-control {
   border: 1px solid #cccccc;
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: 5px;
   padding: 5px 15px;
   min-height: 50px;
+  font-family: "Inter", serif !important;
+  font-size: 16px;
+}
+.reportbugpage .formmainbox ul li select.form-control {
+  width: 100%;
 }
 .reportbugpage .formmainbox ul li textarea {
   border: 1px solid #cccccc;
-  width: 100%;
+  width: calc(100% - 30px);
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 12px 15px;
   min-height: 150px;
+  font-size: 16px;
+  font-family: "Inter", serif !important;
 }
 .reportbugpage .formmainbox ul li label {
   display: block;
@@ -94,6 +106,11 @@
   border-radius: 5px;
   color: #ffffff;
   height: 50px;
+  font-size: 16px;
+}
+.reportbugpage .formmainbox ul li.file-upload-frontcontainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .reportbugpage .formmainbox .file-upload-label span {
   font-size: 18px;
@@ -132,5 +149,6 @@
   }
 }
 .reportbugpage .custom-select .ant-select-selection-placeholder {
-  color: red !important; /* Change to any color you want */
+  color: red !important;
+  /* Change to any color you want */
 }/*# sourceMappingURL=reportbug.css.map */
