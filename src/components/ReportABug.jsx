@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import "./styles/reportbug.css";  
+import React, { useState } from "react";
+import "./styles/reportbug.css";
 
 
 export default function BugReportForm() {
@@ -214,7 +214,7 @@ export default function BugReportForm() {
         <div
           data-w-id="077155df-02cf-ce52-d236-39089a93392f"
           className="manifesto-hero-trigger"
-         />
+        />
         <header className="hero cc-manifesto">
           <div className="page-padding">
             <div className="frontcontainer">
@@ -258,7 +258,7 @@ export default function BugReportForm() {
       <header className="hero cc-manifesto">
         <div className="page-padding">
           <div className="frontcontainer">
-            <div className="reportHeader">
+            {/* <div className="reportHeader">
             <img
                 src="images/logo.png"
                 loading="eager"
@@ -266,7 +266,7 @@ export default function BugReportForm() {
                 alt=""
                 className="u-auto-img"
               />
-            </div>
+            </div> */}
             <div className="manifesto-header">
               <div className="eyebrow-pill">
                 <div className="eyebrow-pill-inner">
@@ -317,9 +317,8 @@ export default function BugReportForm() {
                     type="text"
                     name="title"
                     maxLength={100}
-                    className={`form-control input ${
-                      errors.title ? "input-error" : ""
-                    }`}
+                    className={`form-control input ${errors.title ? "input-error" : ""
+                      }`}
                     placeholder="Bug Title"
                     value={formData.title}
                     onChange={handleChange}
@@ -330,14 +329,13 @@ export default function BugReportForm() {
                 <li>
                   <textarea
                     name="description"
-                    className={`areabox ${
-                      errors.description ? "input-error" : ""
-                    }`}
+                    className={`areabox ${errors.description ? "input-error" : ""
+                      }`}
                     maxLength={500}
                     placeholder="Bug Description"
                     value={formData.description}
                     onChange={handleChange}
-                 />
+                  />
                   {errors.description && (
                     <p className="error-text">{errors.description}</p>
                   )}
@@ -346,9 +344,8 @@ export default function BugReportForm() {
                 <li>
                   <select
                     name="priority"
-                    className={`form-control input ${
-                      errors.priority ? "input-error" : ""
-                    }`}
+                    className={`form-control input ${errors.priority ? "input-error" : ""
+                      }`}
                     value={formData.priority}
                     onChange={handleChange}
                   >

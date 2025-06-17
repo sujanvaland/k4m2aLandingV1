@@ -56,6 +56,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
 
+  <link rel="preload" as="image" href="/images/logo-main-wh.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/colorback.webp" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/k4m2a-app-1.webp" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/k4m2a-app-2.webp" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/k4m2a-app-3.webp" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/hicon_3.png" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/hicon_2.png" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/hicon_1.png" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/img_questions.jpg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/img_Philosophies.jpg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/img_gurus.jpg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/images/logo-main-wh.svg" type="image/svg+xml" />
+
   <!-- Critical CSS -->
   <style>
     /* Add your critical CSS here */
@@ -64,6 +77,7 @@
       padding: 0;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+
     .loading-wrapper {
       position: fixed;
       top: 0;
@@ -76,6 +90,7 @@
       background: #fff;
       z-index: 9999;
     }
+
     .loader {
       width: 48px;
       height: 48px;
@@ -84,9 +99,15 @@
       border-radius: 50%;
       animation: spin 1s linear infinite;
     }
+
     @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
   </style>
 
