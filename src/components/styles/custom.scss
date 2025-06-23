@@ -7669,6 +7669,10 @@ ol.framer-text {
         align-items: flex-start;
         flex-wrap: wrap;
 
+        &.flexstartbox {
+            justify-content: flex-start;
+        }
+
         .left-profile {
             flex: 0 0 73%;
             max-width: 73%;
@@ -8280,4 +8284,157 @@ ol.framer-text {
 
 ul li {
     list-style-type: none;
+}
+
+.externalpost .left-post {
+    .analyticspage {
+        h3 {
+            font-size: 21px;
+        }
+
+        .postTitle {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .interestimage {
+                width: 45px;
+                height: 45px;
+            }
+
+            h2 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                line-height: 25px;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 14px;
+                    font-weight: normal;
+                    width: 100%;
+                    color: #808080;
+                }
+
+            }
+
+
+        }
+
+        .analyticsmainbox {
+            margin-top: 10px;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0px;
+                padding: 0px;
+                flex-wrap: wrap;
+
+                li {
+                    width: 49%;
+                    border: 1px solid #cccccc;
+                    padding: 15px;
+                    border-radius: 10px;
+                    min-height: 100px;
+                    margin-bottom: 15px;
+
+                    h4 {
+                        font-size: 23px;
+                        font-family: "Inter", serif !important;
+                        margin-bottom: 10px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+
+
+
+        }
+
+        .martop15 {
+            margin-top: 15px !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 6px !important;
+        }
+
+        .fnt11 {
+            font-size: 12px;
+        }
+
+        .actionsBox {
+            border-top: 2px solid #f4f4f4;
+            margin-top: 15px;
+            padding-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            margin-bottom: 35px;
+
+            .iconBox {
+                width: 80px;
+                min-width: 80px;
+                height: 80px;
+                border-radius: 100px;
+                border: 2px solid #ededed;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+
+                img {
+                    max-width: 60%;
+                }
+            }
+        }
+
+        .trackerbox {
+            .datebox {
+                font-size: 13px;
+            }
+
+            h5 {
+                margin: 5px 0px;
+                padding: 0px;
+                font-size: 17px;
+            }
+        }
+
+        .postcountBox {
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 15px;
+
+            h3 {
+                margin-bottom: 7px;
+                font-weight: 800;
+
+                span {
+                    font-weight: 500;
+                    color: #858585;
+                }
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            a {
+                margin-top: 5px;
+                display: inline-block;
+                font-weight: 600;
+            }
+        }
+    }
 }

@@ -36,9 +36,11 @@ export default function Layout({ children }) {
   const isSignInPage = location.pathname === "/signin";
   const isProfilePage = location.pathname === "/profile";
   const isPostPage = location.pathname === "/post";
+  const isanalytics = location.pathname === "/analytics";
+
   return (
     <div className="page-wrapper website">
-      {!isSignInPage && !isProfilePage && !isPostPage && <Header />}
+      {!isSignInPage && !isProfilePage && !isPostPage && !isanalytics && <Header />}
       <main className="main cc-home">
         {children}
       </main>

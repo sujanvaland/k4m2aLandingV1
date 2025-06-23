@@ -7410,6 +7410,11 @@ ol.framer-text li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.main-profilecontainer .profileflexBox.flexstartbox {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 .main-profilecontainer .profileflexBox .left-profile {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 73%;
@@ -8029,4 +8034,167 @@ ol.framer-text li {
 
 ul li {
   list-style-type: none;
+}
+
+.externalpost .left-post .analyticspage h3 {
+  font-size: 21px;
+}
+.externalpost .left-post .analyticspage .postTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.externalpost .left-post .analyticspage .postTitle .interestimage {
+  width: 45px;
+  height: 45px;
+}
+.externalpost .left-post .analyticspage .postTitle h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.externalpost .left-post .analyticspage .postTitle h2 span {
+  font-size: 14px;
+  font-weight: normal;
+  width: 100%;
+  color: #808080;
+}
+.externalpost .left-post .analyticspage .analyticsmainbox {
+  margin-top: 10px;
+}
+.externalpost .left-post .analyticspage .analyticsmainbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px;
+  padding: 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.externalpost .left-post .analyticspage .analyticsmainbox ul li {
+  width: 49%;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  border-radius: 10px;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+.externalpost .left-post .analyticspage .analyticsmainbox ul li h4 {
+  font-size: 23px;
+  font-family: "Inter", serif !important;
+  margin-bottom: 10px;
+}
+.externalpost .left-post .analyticspage .analyticsmainbox ul li p {
+  font-size: 13px;
+}
+.externalpost .left-post .analyticspage .martop15 {
+  margin-top: 15px !important;
+}
+.externalpost .left-post .analyticspage .mb-3 {
+  margin-bottom: 6px !important;
+}
+.externalpost .left-post .analyticspage .fnt11 {
+  font-size: 12px;
+}
+.externalpost .left-post .analyticspage .actionsBox {
+  border-top: 2px solid #f4f4f4;
+  margin-top: 15px;
+  padding-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+.externalpost .left-post .analyticspage .actionsBox .iconBox {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  border: 2px solid #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+.externalpost .left-post .analyticspage .actionsBox .iconBox img {
+  max-width: 60%;
+}
+.externalpost .left-post .analyticspage .trackerbox .datebox {
+  font-size: 13px;
+}
+.externalpost .left-post .analyticspage .trackerbox h5 {
+  margin: 5px 0px;
+  padding: 0px;
+  font-size: 17px;
+}
+.externalpost .left-post .analyticspage .postcountBox {
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.externalpost .left-post .analyticspage .postcountBox h3 {
+  margin-bottom: 7px;
+  font-weight: 800;
+}
+.externalpost .left-post .analyticspage .postcountBox h3 span {
+  font-weight: 500;
+  color: #858585;
+}
+.externalpost .left-post .analyticspage .postcountBox p {
+  font-size: 13px;
+}
+.externalpost .left-post .analyticspage .postcountBox a {
+  margin-top: 5px;
+  display: inline-block;
+  font-weight: 600;
 }/*# sourceMappingURL=custom.css.map */
