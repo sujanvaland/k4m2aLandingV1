@@ -5,6 +5,7 @@ import { Bounce, ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
 import { LoadingSpinner } from './components/Layout';
 import { initializeScripts } from './utils/scriptLoader';
+import Profile from "./components/profile/index";
 
 // Lazy load route components with prefetch
 const lazyLoad = (importFunc) => {
@@ -35,7 +36,6 @@ const BlogDetails = lazyLoad(() => import("./components/BlogDetails"));
 const ContactUs = lazyLoad(() => import("./components/ContactUs"));
 const Pricing = lazyLoad(() => import("./components/Pricing"));
 const Support = lazyLoad(() => import("./components/Support"));
-const Profile = lazyLoad(() => import("./components/Profile"));
 const Post = lazyLoad(() => import("./components/Post"));
 const Downloadapp = lazyLoad(() => import("./components/Downloadapp"));
 const Qrpage = lazyLoad(() => import("./components/Qrpage"));
@@ -118,7 +118,7 @@ function App() {
             }
           />
           <Route
-            path="/profile"
+            path="/profile/:userName"
             element={
               <Layout>
                 <Profile />
