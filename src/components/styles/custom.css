@@ -8192,6 +8192,10 @@ ul li {
 }
 .externalpost .left-post .analyticspage .postcountBox p {
   font-size: 13px;
+  line-height: 15px;
+}
+.externalpost .left-post .analyticspage .postcountBox p a {
+  margin-top: 0px;
 }
 .externalpost .left-post .analyticspage .postcountBox a {
   margin-top: 5px;

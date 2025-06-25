@@ -392,7 +392,41 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="gurubox">
+
+
+                  <div className="country-tag-wrap cc-1">
+                    <div className="country-tag cc-1">
+                      <div className="country-icon w-embed">
+                        <picture>
+                          <source srcSet="images/ rhonda_byrne.png" type="image/png" />
+                          <img
+                            src="images/rhonda_byrne.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div>Rhonda Byrne</div>
+                    </div>
+                  </div>
+
+                  <div className="country-tag-wrap cc-1">
+                    <div className="country-tag cc-1">
+                      <div className="country-icon w-embed">
+                        <picture>
+                          <source srcSet="images/ wayne_dyer.png" type="image/png" />
+                          <img
+                            src="images/wayne_dyer.png"
+                            alt=""
+                            loading="lazy"
+                          />
+                        </picture>
+                      </div>
+                      <div>Dr. Wayne Dyer</div>
+                    </div>
+                  </div>
                   <div className="country-tag-wrap cc-6">
+
                     <div className="country-tag cc-9">
                       <div>
                         <a >150+ More</a>

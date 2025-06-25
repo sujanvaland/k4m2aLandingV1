@@ -93,6 +93,12 @@ function Analytics() {
                                         <Link to="/">Comments on feed</Link>
                                     </div>
 
+                                    <div className="postcountBox">
+                                        <h3>Creator tools</h3>
+                                        <p className="lineheight13">Creator mode gives you more ways to engage with your audience  by enabling access to select tools. <Link to="">Learn more</Link> about creator tools access.</p>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
