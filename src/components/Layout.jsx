@@ -34,8 +34,8 @@ export default function Layout({ children }) {
   // }
 
   const isSignInPage = location.pathname === "/signin";
-  const isProfilePage = location.pathname === "/profile";
-  const isPostPage = location.pathname === "/post";
+  const isProfilePage = location.pathname === "/profile" || location.pathname.startsWith("/profile/");
+  const isPostPage = location.pathname === "/post" || location.pathname.startsWith("/post/");
   const isanalytics = location.pathname === "/analytics";
 
   return (
