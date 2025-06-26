@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "antd/lib/typography/Link";
+import { formatCustomDateTime } from "../../utils/jsonUtils";
 
-export function PostContent() {
+export function PostContent({ post }) {
     return (
         <>
             <div className="postTitle">
@@ -15,23 +16,22 @@ export function PostContent() {
                 </h2>
             </div>
             <div className="interestbox">
-                <div className="interestimage">
-                    <img src="/images/img_sadguru.png" alt="Interest" />
-                </div>
+                {post?.profileImg && <div className="interestimage">
+                    <img src={post?.profileImg} alt="Interest" />
+                </div>}
                 <div className="interesttext">
-                    <h4>Sadguru</h4>
-                    <p>@spiritual Leader</p>
+                    {post?.createdBy && <h4>{post?.createdBy}</h4>}
+                    {post?.userName && <p>@{post?.userName}</p>}
                 </div>
             </div>
             <div className="post-textarea">
-                <p>At Patna airport, met the young cricketing sensation Vaibhav Suryavanshi and his family. His cricketing skills are being admired all over the nation! My best wishes to him for his future endeavours.</p>
-                <p>At Patna airport, met the young cricketing sensation Vaibhav Suryavanshi and his family. His cricketing skills are being admired all over the nation! My best wishes to him for his future endeavours.</p>
-                <div className="post-image">
-                    <img src="/images/detailspost.jpg" alt="Post" />
-                </div>
+                {post?.textMsg && <p>{post?.textMsg}</p>}
+                {post?.thumbnailUrl[0] && <div className="post-image">
+                    <img src={post?.thumbnailUrl[0]} alt="Post" />
+                </div>}
             </div>
             <div className="viewsdata">
-                6:24 PM · May 31, 2025  9.5M Views
+            {`${formatCustomDateTime(post?.createdOn)} - ${post?.noOfViews} Views`}
             </div>
         </>
     );

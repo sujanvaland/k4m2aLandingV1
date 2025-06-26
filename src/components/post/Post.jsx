@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "antd/lib/typography/Link";
 import { PostHeader } from "./PostHeader";
 import { PostContent } from "./PostContent";
 import { PostFooter } from "./PostFooter";
 import { PostSidebar } from "./PostSidebar";
+import { useParams } from "react-router-dom";
+import { getPostById } from "../../services/post.service";
+import { parseJsonString } from "../../utils/jsonUtils";
 
 const isAndroid = /Android/i.test(navigator.userAgent);
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 function Post() {
+
+    const { postId } = useParams();
+    const [postState, setPostSTate] = useState({
+        post: null
+    })
+
+    useEffect(() => {
+        const getPost = async () => {
+            if (postId) {
+                const res = await getPostById(postId)
+                setPostSTate({
+                    post: {...res[0], postObject: parseJsonString(res[0].postMessage)}
+                })
+            }
+        }
+
+        getPost()
+    }, [postId])
+
     return (
         <main className="main cc-home">
             <section className="deviceProfile externalpost mb50">
@@ -20,8 +42,8 @@ function Post() {
                             </div>
                             <div className="left-post">
                                 <div className="mainprofile-box Postpadd15">
-                                    <PostContent />
-                                    <PostFooter />
+                                    <PostContent post={postState?.post?.postObject} />
+                                    {postState?.post?.postObject && <PostFooter post={postState?.post?.postObject} />}
                                 </div>
                             </div>
                             <div className="right-profile">

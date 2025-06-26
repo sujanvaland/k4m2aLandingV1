@@ -36,7 +36,7 @@ const BlogDetails = lazyLoad(() => import("./components/BlogDetails"));
 const ContactUs = lazyLoad(() => import("./components/ContactUs"));
 const Pricing = lazyLoad(() => import("./components/Pricing"));
 const Support = lazyLoad(() => import("./components/Support"));
-const Post = lazyLoad(() => import("./components/Post"));
+const Post = lazyLoad(() => import("./components/post/Post"));
 const Downloadapp = lazyLoad(() => import("./components/Downloadapp"));
 const Qrpage = lazyLoad(() => import("./components/Qrpage"));
 const Analytics = lazyLoad(() => import("./components/Analytics"));
@@ -135,7 +135,7 @@ function App() {
           />
 
           <Route
-            path="/post"
+            path="/post/:postId"
             element={
               <Layout>
                 <Post />
