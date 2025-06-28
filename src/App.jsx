@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import { Bounce, ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
-import { LoadingSpinner } from './components/Layout';
-import { initializeScripts } from './utils/scriptLoader';
+import { LoadingSpinner } from "./components/Layout";
+import { initializeScripts } from "./utils/scriptLoader";
 import Profile from "./components/profile/index";
 
 // Lazy load route components with prefetch
@@ -21,7 +21,9 @@ const Research = lazyLoad(() => import("./components/Research"));
 const ThankYou = lazyLoad(() => import("./components/ThankYou"));
 const Terms = lazyLoad(() => import("./components/Terms"));
 const RequestInvite = lazyLoad(() => import("./components/RequestInvite"));
-const RequestInviteCreator = lazyLoad(() => import("./components/RequestInviteCreator"));
+const RequestInviteCreator = lazyLoad(
+  () => import("./components/RequestInviteCreator"),
+);
 const PlayTheRules = lazyLoad(() => import("./components/PlayTheRules"));
 const Privacy = lazyLoad(() => import("./components/Privacy"));
 const NotFound = lazyLoad(() => import("./components/NotFound"));
@@ -40,7 +42,6 @@ const Post = lazyLoad(() => import("./components/post/Post"));
 const Downloadapp = lazyLoad(() => import("./components/Downloadapp"));
 const Qrpage = lazyLoad(() => import("./components/Qrpage"));
 const Analytics = lazyLoad(() => import("./components/Analytics"));
-
 
 // Prefetch routes on hover
 const prefetchRoute = (route) => {
@@ -118,7 +119,7 @@ function App() {
             }
           />
           <Route
-            path="/profile/:userName"
+            path="/:encodedUserName"
             element={
               <Layout>
                 <Profile />
@@ -135,7 +136,7 @@ function App() {
           />
 
           <Route
-            path="/post/:postId"
+            path="/:userName/post/:encodedPostId"
             element={
               <Layout>
                 <Post />
@@ -166,12 +167,7 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/report-issue"
-            element={
-              <BugReportForm />
-            }
-          />
+          <Route path="/report-issue" element={<BugReportForm />} />
           <Route
             path="/pricing"
             element={
@@ -180,12 +176,7 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/signin"
-            element={
-              <SignIn />
-            }
-          />
+          <Route path="/signin" element={<SignIn />} />
           <Route
             path="/thank-you"
             element={

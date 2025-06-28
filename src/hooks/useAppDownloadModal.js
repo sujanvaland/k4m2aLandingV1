@@ -1,8 +1,9 @@
-import { useState, useCallback } from 'react';
-import { ANDROID_LINK, IOS_LINK } from '../constants/appLinks';
+import { useState, useCallback } from "react";
+import { ANDROID_LINK, IOS_LINK } from "../constants/appLinks";
 
 function getOS() {
-  if (typeof navigator === 'undefined') return { isAndroid: false, isIOS: false };
+  if (typeof navigator === "undefined")
+    return { isAndroid: false, isIOS: false };
   const ua = navigator.userAgent;
   return {
     isAndroid: /Android/i.test(ua),
@@ -20,8 +21,8 @@ export default function useAppDownloadModal() {
   const getAppLink = useCallback(() => {
     if (isAndroid) return ANDROID_LINK;
     if (isIOS) return IOS_LINK;
-    return '#';
+    return "#";
   }, [isAndroid, isIOS]);
 
   return { isOpen, openModal, closeModal, isAndroid, isIOS, getAppLink };
-} 
+}
