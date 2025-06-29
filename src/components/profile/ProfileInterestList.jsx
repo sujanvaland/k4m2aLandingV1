@@ -7,13 +7,13 @@ function ProfileInterestList({ items }) {
         <div className="interestbox" key={idx}>
           <div className="interestimage">
             <img
-              src={item.profileImg ?? "/images/img_sadguru.png"}
+              src={item?.profileImg ?? "/images/img_sadguru.png"}
               alt="Interest"
             />
           </div>
-          <div className="interesttext">
-            <h4>{item.name}</h4>
-          </div>
+          {item?.name &&<div className="interesttext">
+            <h4>{item?.name}</h4>
+          </div>}
         </div>
       ))}
     </div>

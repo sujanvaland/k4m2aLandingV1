@@ -18,9 +18,9 @@ export function PostContent({ post }) {
       </div>
       <div className="post-textarea">
         {post?.textMsg && <p>{post?.textMsg}</p>}
-        {post?.thumbnailUrl[0] && (
+        {Array.isArray(post?.thumbnailUrl) && post.thumbnailUrl[0] && (
           <div className="post-image">
-            <img src={post?.thumbnailUrl[0]} alt="Post" />
+            <img src={post.thumbnailUrl[0]} alt="Post" />
           </div>
         )}
       </div>

@@ -16,7 +16,10 @@ import { decodeBase64 } from "../../utils/jsonUtils";
 
 function Profile() {
   const { encodedUserName } = useParams();
+  if (!encodedUserName) throw new Error('Encoded username is missing from the URL');
+  
   const userName = decodeBase64(encodedUserName);
+  if (!userName) throw new Error('Invalid encoded username');
 
   const [profile, setProfile] = useState({
     [PROFILE_STATE_KEYS.PERSONAL]: null,
@@ -26,16 +29,24 @@ function Profile() {
     [PROFILE_STATE_KEYS.PRACTICE]: null,
   });
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
     const fetchProfileData = async () => {
       try {
         setLoading(true);
-        const personalRes = await getProfile(userName ?? "subhash.trivedi");
+        const personalRes = await getProfile(userName);
+        
+        if (!personalRes || !personalRes.data || !personalRes.data.result) {
+          throw new Error('PROFILE_NOT_FOUND');
+        }
+        
         const personalData = personalRes.data.result;
         setProfile((prev) => ({
           ...prev,
           [PROFILE_STATE_KEYS.PERSONAL]: personalData,
         }));
+        
         const [experienceRes, interestRes, bookRes, practiceRes] =
           await Promise.all([
             getDataByType(personalData?.id, PROFILE_DATA_TYPES.EXPERIENCE),
@@ -43,21 +54,34 @@ function Profile() {
             getDataByType(personalData?.id, PROFILE_DATA_TYPES.BOOK),
             getDataByType(personalData?.id, PROFILE_DATA_TYPES.PRACTICE),
           ]);
+          
         setProfile((prev) => ({
           ...prev,
-          [PROFILE_STATE_KEYS.EXPERIENCE]: experienceRes.data.result,
-          [PROFILE_STATE_KEYS.INTEREST]: interestRes.data.result,
-          [PROFILE_STATE_KEYS.BOOK]: bookRes.data.result,
-          [PROFILE_STATE_KEYS.PRACTICE]: practiceRes.data.result,
+          [PROFILE_STATE_KEYS.EXPERIENCE]: experienceRes?.data?.result || [],
+          [PROFILE_STATE_KEYS.INTEREST]: interestRes?.data?.result || [],
+          [PROFILE_STATE_KEYS.BOOK]: bookRes?.data?.result || [],
+          [PROFILE_STATE_KEYS.PRACTICE]: practiceRes?.data?.result || [],
         }));
-      } catch (error) {
-        console.error("Error fetching profile data:", error);
+      } catch (err) {
+        if (err?.message === 'PROFILE_NOT_FOUND') {
+          setError(err);
+        } else {
+          setError(new Error('Something went wrong while fetching profile data'));
+        }
       } finally {
         setLoading(false);
       }
     };
     fetchProfileData();
-  }, []);
+  }, [userName]);
+
+  if (error) {
+    if (error.message === 'PROFILE_NOT_FOUND') {
+      throw new Error('404_NOT_FOUND');
+    }
+    throw error;
+  }
+
   if (loading) {
     return (
       <main className="main cc-home">
