@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import Header from './Header'
 import Footer from './Footer'
 import { Spin } from 'antd';
+import { checkProfilePagePathname } from "../utils/pathMatcher.util";
+import { POST_PAGE_PATHNAME_PATEERN } from "../constants/regex";
 
 const LoadingSpinner = () => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
@@ -34,8 +36,8 @@ export default function Layout({ children }) {
   // }
 
   const isSignInPage = location.pathname === "/signin";
-  const isProfilePage = location.pathname === "/profile";
-  const isPostPage = location.pathname === "/post";
+  const isProfilePage = checkProfilePagePathname(location.pathname);
+  const isPostPage = POST_PAGE_PATHNAME_PATEERN.test(location.pathname);
   const isanalytics = location.pathname === "/analytics";
 
   return (
