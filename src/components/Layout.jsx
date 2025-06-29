@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Header from './Header'
 import Footer from './Footer'
 import { Spin } from 'antd';
-import { isProfilePage } from "../utils/pathMatcher.util";
+import { checkProfilePagePathname } from "../utils/pathMatcher.util";
 import { POST_PAGE_PATHNAME_PATEERN } from "../constants/regex";
 
 const LoadingSpinner = () => (
@@ -36,7 +36,7 @@ export default function Layout({ children }) {
   // }
 
   const isSignInPage = location.pathname === "/signin";
-  const isProfilePage = isProfilePage(location.pathname);
+  const isProfilePage = checkProfilePagePathname(location.pathname);
   const isPostPage = POST_PAGE_PATHNAME_PATEERN.test(location.pathname);
   const isanalytics = location.pathname === "/analytics";
 
