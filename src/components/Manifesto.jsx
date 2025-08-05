@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "./styles/custom.css"
 import "./styles/styles.css"
 import EmailForm from "./ui/EmailForm";
+import SEO from "./SEO";
+import { pageMetaData } from "../data/metaData";
 
 function Manifesto() {
   useEffect(() => {

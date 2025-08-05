@@ -176,7 +176,7 @@ export default function Footer() {
             >
               <div className="logobox">
                 <picture>
-                  <source srcset="/images/logo-main-wh.svg" type="image/svg" />
+                  <source srcSet="/images/logo-main-wh.svg" type="image/svg" />
                   <img src="/images/logo-main-wh.svg" alt="K4M2A" loading="lazy" />
                 </picture>
               </div>

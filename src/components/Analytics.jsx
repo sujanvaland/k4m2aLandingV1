@@ -18,15 +18,25 @@ function Analytics() {
                                 <div className="downloadapp showin-mobile">
                                     {
                                         isAndroid &&
-                                        <Link to="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN" className="profile-header-text">
+                                         <a
+                                            href="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN"
+                                            className="profile-header-text"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
                                             <img src="/images/androidapp.png" alt="Logo" />
-                                        </Link>
+                                        </a>
                                     }
                                     {
                                         isIOS &&
-                                        <Link to="https://apps.apple.com/in/app/k4m2a/id6743112577" className="profile-header-text">
+                                        <a
+                                            href="https://apps.apple.com/in/app/k4m2a/id6743112577"
+                                            className="profile-header-text"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
                                             <img src="/images/appleapp.png" alt="Logo" />
-                                        </Link>
+                                        </a>
                                     }
 
 

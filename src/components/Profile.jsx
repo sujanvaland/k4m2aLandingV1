@@ -15,18 +15,27 @@ function Profile() {
                     </Link>
                     <div className="downloadapp">
                         {
-                            isAndroid &&
-                            <Link to="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN" className="profile-header-text">
-                                <img src="/images/androidapp.png" alt="Logo" />
-                            </Link>
-                        }
-
-                        {
-                            isIOS &&
-                            <Link to="https://apps.apple.com/in/app/k4m2a/id6743112577" className="profile-header-text">
-                                <img src="/images/appleapp.png" alt="Logo" />
-                            </Link>
-                        }
+                                        isAndroid &&
+                                         <a
+                                            href="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN"
+                                            className="profile-header-text"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
+                                            <img src="/images/androidapp.png" alt="Logo" />
+                                        </a>
+                                    }
+                                    {
+                                        isIOS &&
+                                        <a
+                                            href="https://apps.apple.com/in/app/k4m2a/id6743112577"
+                                            className="profile-header-text"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
+                                            <img src="/images/appleapp.png" alt="Logo" />
+                                        </a>
+                                    }
 
 
 

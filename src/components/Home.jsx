@@ -1,10 +1,21 @@
 import { Link } from 'react-router-dom';
 import EmailForm from './ui/EmailForm';
 import EyebrowPill from './ui/EyebrowPill';
+import SEO from './SEO';
+import { pageMetaData } from '../data/metaData';
+
+const isAndroid = /Android/i.test(navigator.userAgent);
+const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 export default function Home() {
   return (
     <>
+      <SEO 
+        title={pageMetaData.home.title}
+        description={pageMetaData.home.description}
+        keywords={pageMetaData.home.keywords}
+        url={pageMetaData.home.url}
+      />
       <header className="hero">
         <div className="page-padding">
           <div className="frontcontainer">
@@ -419,7 +430,7 @@ export default function Home() {
                             src="images/wayne_dyer.png"
                             alt=""
                             loading="lazy"
-                          />
+                          />  
                         </picture>
                       </div>
                       <div>Dr. Wayne Dyer</div>
@@ -429,7 +440,38 @@ export default function Home() {
 
                     <div className="country-tag cc-9">
                       <div>
-                        <a >150+ More</a>
+                         {
+                                        isAndroid &&
+                                         <a
+                                            href="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN"
+                                            className="linktext"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
+                                           150+ More
+                                        </a>
+                                        
+                                    }
+                                    {
+                                        isIOS &&
+                                        <a
+                                            href="https://apps.apple.com/in/app/k4m2a/id6743112577"
+                                            className="linktext"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
+                                            150+ More
+                                        </a>
+                                    } 
+
+                                     <a
+                                            href="https://play.google.com/store/apps/details?id=com.k4m2a&hl=en_IN"
+                                            className="linktext desktop "
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            >
+                                           150+ More
+                                        </a>
                       </div>
                     </div>
                   </div>

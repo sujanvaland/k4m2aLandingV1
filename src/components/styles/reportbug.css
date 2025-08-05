@@ -1,18 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 .reportbugpage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   padding-top: 10px;
   background-color: #ffffff;
   font-family: "Inter", serif !important;
@@ -21,10 +12,8 @@
   margin-bottom: 50px;
 }
 .reportbugpage .hero .eyebrow-pill {
-  -webkit-animation: fadeIn 0.65s ease-in-out backwards;
-          animation: fadeIn 0.65s ease-in-out backwards;
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation: fadeIn 0.65s ease-in-out backwards;
+  animation-delay: 0.1s;
   text-align: center;
 }
 .reportbugpage .hero .eyebrow-pill .eyebrow-pill-inner {
@@ -49,10 +38,8 @@
   position: relative;
 }
 .reportbugpage .home-hero-heading {
-  -webkit-animation: fadeIn 0.65s ease-in-out backwards;
-          animation: fadeIn 0.65s ease-in-out backwards;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  animation: fadeIn 0.65s ease-in-out backwards;
+  animation-delay: 0.15s;
   margin-bottom: 20px;
 }
 @media only screen and (min-width: 1500px) {

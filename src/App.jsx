@@ -1,5 +1,6 @@
 import React, { lazy, Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/Layout";
 import { Bounce, ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
@@ -57,9 +58,10 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Suspense fallback={<LoadingSpinner />}>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route
             path="/"
@@ -251,7 +253,7 @@ function App() {
             }
           />
           <Route
-            path="/blog/:id"
+            path="/blog/:slug"
             element={
               <Layout>
                 <BlogDetails />
@@ -282,6 +284,7 @@ function App() {
         transition={Bounce}
       />
     </Router>
+    </HelmetProvider>
   );
 }
 

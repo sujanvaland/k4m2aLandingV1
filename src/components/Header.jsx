@@ -108,7 +108,7 @@ export default function Header() {
                   onClick={(e) => handleClick(e, '/blog')}
                 >
                   Blog
-                </Link> */}
+                </Link>
                 {/* <Link to="/careers" target="_blank" className="nav-link">
                   Careers
                 </Link> */}
@@ -172,7 +172,7 @@ export default function Header() {
                 >
                   Career
                 </Link>
-              </div>
+              </div> */}
 
               <div className="mobile-menu-fade">
                 <Link
@@ -203,7 +203,6 @@ export default function Header() {
                   Blog
                 </Link> 
               </div>
-              */ }
 
               <div className="mobile-menu-fade">
                 <Link to="/signin" className="cta ">

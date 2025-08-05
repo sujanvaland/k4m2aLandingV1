@@ -2318,6 +2318,9 @@ body {
 
     .frontcontainer.frontcontainer--small {
         max-width: 720px !important;
+        &.maxwd1200{
+            max-width: 1200px!important;
+        }
     }
 
     .frontcontainer.frontcontainer--small.cc-manifesto {
@@ -2369,7 +2372,7 @@ body {
         letter-spacing: -.03em;
         margin-bottom: 24px;
         font-family: "Noto Serif", serif !important;
-        font-size: 58px;
+        font-size: 58px; line-height: 65px;
         font-weight: 400;
         line-height: 1
     }
@@ -2389,12 +2392,12 @@ body {
     }
 
     .section-heading.cc-small {
-        font-size: 40px;
+        font-size: 40px; line-height:45px;
         line-height: 1.2
     }
 
     .section-heading.cc-large {
-        margin-bottom: 40px;
+        margin-bottom: 40px; line-height: 45px;
         font-size: 72px;
 
         &.marbtmzero {
@@ -3001,8 +3004,12 @@ body {
     }
 
     .section-header.cc-legal {
-        max-width: 720px
+        max-width: 720px;
+        &.wdth1200{
+            max-width: 1200px!important;
+        }
     }
+
 
     .features-grid {
         grid-column-gap: 28px;
@@ -6497,6 +6504,24 @@ body {
     }
 
     .blogdetails {
+        ol{
+            li{
+                margin-bottom: 20px; 
+            }
+        }
+        ul{margin:0px;
+            li{position: relative;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: -20px; display: block;
+                    color: #000000;
+                    font-size: 20px; top:11px;  background: #464646;;
+                    width: 8px; height: 8px; border-radius: 80px;
+                }
+
+            }
+        }
         .blogdetailimg {
             margin-bottom: 60px !important;
             max-height: 600px;
@@ -6518,13 +6543,21 @@ body {
         }
 
         h1.section-heading {
-            font-size: 55px;
+            font-size: 55px; line-height: 65px;
         }
 
         p {
             letter-spacing: -0.03em;
             font-size: 20px;
             line-height: 1.6;
+        }
+
+         h3 {
+            color: #000000;
+            font-weight: 600;
+              font-size: 25px;
+            margin-bottom: 15px; margin-top:25px;
+            font-family: "Inter", serif !important;
         }
 
         h4 {
@@ -6539,6 +6572,12 @@ body {
 
         img {
             margin: 30px 0px 40px;
+        }
+        a{color:#0082f3;
+            &.btnblack{
+                color:#ffffff;
+            }
+        
         }
 
     }
@@ -7033,7 +7072,7 @@ body {
         }
 
         .section-heading {
-            font-size: 64px;
+            font-size: 64px; line-height: 70px;
 
             &.fnt35 {
                 font-size: 35px;
@@ -8443,5 +8482,11 @@ ul li {
                 font-weight: 600;
             }
         }
-    }
+    } 
+    .linktext{
+    font-size: 16px;font-family: "Inter", serif !important; font-weight: 600;
+}
+}
+.btnmargintop50{
+    margin-top: 40px !important;
 }
