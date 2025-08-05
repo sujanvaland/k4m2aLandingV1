@@ -2398,7 +2398,7 @@ body {
 
     .section-heading.cc-large {
         margin-bottom: 40px; line-height: 45px;
-        font-size: 72px;
+        font-size: 72px; line-height: 80px;
 
         &.marbtmzero {
             margin-bottom: 0px;
@@ -6511,14 +6511,14 @@ body {
         }
         ul{margin:0px;
             li{position: relative;
-                &:before{
-                    content: "";
-                    position: absolute;
-                    left: -20px; display: block;
-                    color: #000000;
-                    font-size: 20px; top:11px;  background: #464646;;
-                    width: 8px; height: 8px; border-radius: 80px;
-                }
+                // &:before{
+                //     content: "";
+                //     position: absolute;
+                //     left: -20px; display: block;
+                //     color: #000000;
+                //     font-size: 20px; top:11px;  background: #464646;;
+                //     width: 8px; height: 8px; border-radius: 80px;
+                // }
 
             }
         }

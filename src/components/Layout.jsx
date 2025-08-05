@@ -40,6 +40,17 @@ export default function Layout({ children }) {
   const isPostPage = POST_PAGE_PATHNAME_PATEERN.test(location.pathname);
   const isanalytics = location.pathname === "/analytics";
 
+  // Debug logging
+  console.log('Layout Debug:', {
+    pathname: location.pathname,
+    isSignInPage,
+    isProfilePage,
+    isPostPage,
+    isanalytics,
+    showHeader: !isSignInPage && !isProfilePage && !isPostPage && !isanalytics,
+    showFooter: !isSignInPage && !isProfilePage && !isPostPage
+  });
+
   return (
     <div className="page-wrapper website">
       {!isSignInPage && !isProfilePage && !isPostPage && !isanalytics && <Header />}

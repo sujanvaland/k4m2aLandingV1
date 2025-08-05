@@ -2054,6 +2054,7 @@ body {
   margin-bottom: 40px;
   line-height: 45px;
   font-size: 72px;
+  line-height: 80px;
 }
 .websitepage .section-heading.cc-large.marbtmzero {
   margin-bottom: 0px;
@@ -5420,19 +5421,6 @@ body {
 .websitepage .blogdetails ul li {
   position: relative;
 }
-.websitepage .blogdetails ul li:before {
-  content: "";
-  position: absolute;
-  left: -20px;
-  display: block;
-  color: #000000;
-  font-size: 20px;
-  top: 11px;
-  background: #464646;
-  width: 8px;
-  height: 8px;
-  border-radius: 80px;
-}
 .websitepage .blogdetails .blogdetailimg {
   margin-bottom: 60px !important;
   max-height: 600px;
@@ -6434,11 +6422,8 @@ ol.framer-text li {
   border-radius: 100%;
   display: block;
   overflow: hidden;
-  margin-top: -76px;
+  margin-top: -100px;
   border: 5px solid #ffffff;
-  position: relative;
-  z-index: 2;
-  background: #ffffff;
 }
 .main-profilecontainer .profileflexBox .left-profile .profile-personaldata p.followersbox a {
   color: rgba(0, 0, 0, 0.8);

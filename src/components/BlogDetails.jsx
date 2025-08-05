@@ -57,7 +57,7 @@ function BlogDetails() {
                 <img src={blog.imgdetais} alt={blog.title} loading="lazy" />
               </div>
             </div>
-            <div className="frontcontainer frontcontainer--small">
+            <div className="frontcontainer frontcontainer--small securitypage">
               <div className="legal-rt w-richtext" dangerouslySetInnerHTML={{ __html: blog.content }} />
               {/* <p>Mercari, one of Japan’s leading online marketplaces, saw downloads soar after expanding into the U.S. in 2014. By integrating GPT‑4o mini and other models, Mercari is redefining how users buy and sell secondhand goods, making the process more seamless and accessible worldwide.</p>
             <p>To simplify listings and boost sales, Mercari incorporated OpenAI’s API into two key features. These enhancements reduce friction, helping users create high-quality product pages that drive more successful transactions.</p>
