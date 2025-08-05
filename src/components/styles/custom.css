@@ -6434,8 +6434,11 @@ ol.framer-text li {
   border-radius: 100%;
   display: block;
   overflow: hidden;
-  margin-top: -100px;
+  margin-top: -76px;
   border: 5px solid #ffffff;
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
 }
 .main-profilecontainer .profileflexBox .left-profile .profile-personaldata p.followersbox a {
   color: rgba(0, 0, 0, 0.8);

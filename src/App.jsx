@@ -4,8 +4,9 @@ import { HelmetProvider } from "react-helmet-async";
 import Layout from "./components/Layout";
 import { Bounce, ToastContainer } from "react-toastify";
 import ScrollToTop from "./components/ScrollToTop";
-import { LoadingSpinner } from './components/Layout';
-import { initializeScripts } from './utils/scriptLoader';
+import { LoadingSpinner } from "./components/Layout";
+import { initializeScripts } from "./utils/scriptLoader";
+import Profile from "./components/profile/index";
 
 // Lazy load route components with prefetch
 const lazyLoad = (importFunc) => {
@@ -21,7 +22,9 @@ const Research = lazyLoad(() => import("./components/Research"));
 const ThankYou = lazyLoad(() => import("./components/ThankYou"));
 const Terms = lazyLoad(() => import("./components/Terms"));
 const RequestInvite = lazyLoad(() => import("./components/RequestInvite"));
-const RequestInviteCreator = lazyLoad(() => import("./components/RequestInviteCreator"));
+const RequestInviteCreator = lazyLoad(
+  () => import("./components/RequestInviteCreator"),
+);
 const PlayTheRules = lazyLoad(() => import("./components/PlayTheRules"));
 const Privacy = lazyLoad(() => import("./components/Privacy"));
 const NotFound = lazyLoad(() => import("./components/NotFound"));
@@ -36,12 +39,10 @@ const BlogDetails = lazyLoad(() => import("./components/BlogDetails"));
 const ContactUs = lazyLoad(() => import("./components/ContactUs"));
 const Pricing = lazyLoad(() => import("./components/Pricing"));
 const Support = lazyLoad(() => import("./components/Support"));
-const Profile = lazyLoad(() => import("./components/Profile"));
-const Post = lazyLoad(() => import("./components/Post"));
+const Post = lazyLoad(() => import("./components/post/Post"));
 const Downloadapp = lazyLoad(() => import("./components/Downloadapp"));
 const Qrpage = lazyLoad(() => import("./components/Qrpage"));
 const Analytics = lazyLoad(() => import("./components/Analytics"));
-
 
 // Prefetch routes on hover
 const prefetchRoute = (route) => {
@@ -58,10 +59,10 @@ function App() {
   }, []);
 
   return (
-    <HelmetProvider>
-      <Router>
-        <ScrollToTop />
-        <Suspense fallback={<LoadingSpinner />}>
+      <HelmetProvider>
+    <Router>
+      <ScrollToTop />
+      <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route
             path="/"
@@ -120,7 +121,7 @@ function App() {
             }
           />
           <Route
-            path="/profile"
+            path="/:encodedUserName"
             element={
               <Layout>
                 <Profile />
@@ -137,7 +138,7 @@ function App() {
           />
 
           <Route
-            path="/post"
+            path="/:userName/post/:encodedPostId"
             element={
               <Layout>
                 <Post />
@@ -168,12 +169,7 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/report-issue"
-            element={
-              <BugReportForm />
-            }
-          />
+          <Route path="/report-issue" element={<BugReportForm />} />
           <Route
             path="/pricing"
             element={
@@ -182,12 +178,7 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/signin"
-            element={
-              <SignIn />
-            }
-          />
+          <Route path="/signin" element={<SignIn />} />
           <Route
             path="/thank-you"
             element={
@@ -253,7 +244,7 @@ function App() {
             }
           />
           <Route
-            path="/blog/:slug"
+            path="/blog/:id"
             element={
               <Layout>
                 <BlogDetails />
