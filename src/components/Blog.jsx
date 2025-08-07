@@ -29,7 +29,7 @@ function Blog() {
                 </div>
                 <div className="eyebrow-pill-bg u-rainbow u-blur-perf" />
               </div>
-              <h1 className="section-heading cc-large">Blog</h1>
+              <h1 className="section-heading cc-large">Spiritual School</h1>
             </div>
             <div className="legal-rt w-richtext">
               <div className="bloglistBox">
